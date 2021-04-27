@@ -1,0 +1,62 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Trabalho\\HDN\\.net-base-repository\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Domain\\hdn.net.@base.Domain.csproj": {}
+  },
+  "projects": {
+    "D:\\Trabalho\\HDN\\.net-base-repository\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Domain\\hdn.net.@base.Domain.csproj": {
+      "version": "1.1.0",
+      "restore": {
+        "projectUniqueName": "D:\\Trabalho\\HDN\\.net-base-repository\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Domain\\hdn.net.@base.Domain.csproj",
+        "projectName": "hdn.net.@base.Domain",
+        "projectPath": "D:\\Trabalho\\HDN\\.net-base-repository\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Domain\\hdn.net.@base.Domain.csproj",
+        "packagesPath": "C:\\Users\\Renan\\.nuget\\packages\\",
+        "outputPath": "D:\\Trabalho\\HDN\\.net-base-repository\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Renan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

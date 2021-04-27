@@ -1,0 +1,230 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Trabalho\\HDN\\.net-base-repository\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Infrastructure.Shared\\hdn.net.@base.Infrastructure.Shared.csproj": {}
+  },
+  "projects": {
+    "D:\\Trabalho\\HDN\\.net-base-repository\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Application\\hdn.net.@base.Application.csproj": {
+      "version": "1.1.0",
+      "restore": {
+        "projectUniqueName": "D:\\Trabalho\\HDN\\.net-base-repository\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Application\\hdn.net.@base.Application.csproj",
+        "projectName": "hdn.net.@base.Application",
+        "projectPath": "D:\\Trabalho\\HDN\\.net-base-repository\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Application\\hdn.net.@base.Application.csproj",
+        "packagesPath": "C:\\Users\\Renan\\.nuget\\packages\\",
+        "outputPath": "D:\\Trabalho\\HDN\\.net-base-repository\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Renan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "D:\\Trabalho\\HDN\\.net-base-repository\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Domain\\hdn.net.@base.Domain.csproj": {
+                "projectPath": "D:\\Trabalho\\HDN\\.net-base-repository\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Domain\\hdn.net.@base.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.0.0, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[9.1.2, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[9.1.2, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[3.1.7, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[4.7.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Trabalho\\HDN\\.net-base-repository\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Domain\\hdn.net.@base.Domain.csproj": {
+      "version": "1.1.0",
+      "restore": {
+        "projectUniqueName": "D:\\Trabalho\\HDN\\.net-base-repository\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Domain\\hdn.net.@base.Domain.csproj",
+        "projectName": "hdn.net.@base.Domain",
+        "projectPath": "D:\\Trabalho\\HDN\\.net-base-repository\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Domain\\hdn.net.@base.Domain.csproj",
+        "packagesPath": "C:\\Users\\Renan\\.nuget\\packages\\",
+        "outputPath": "D:\\Trabalho\\HDN\\.net-base-repository\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Renan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Trabalho\\HDN\\.net-base-repository\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Infrastructure.Shared\\hdn.net.@base.Infrastructure.Shared.csproj": {
+      "version": "1.1.0",
+      "restore": {
+        "projectUniqueName": "D:\\Trabalho\\HDN\\.net-base-repository\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Infrastructure.Shared\\hdn.net.@base.Infrastructure.Shared.csproj",
+        "projectName": "hdn.net.@base.Infrastructure.Shared",
+        "projectPath": "D:\\Trabalho\\HDN\\.net-base-repository\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Infrastructure.Shared\\hdn.net.@base.Infrastructure.Shared.csproj",
+        "packagesPath": "C:\\Users\\Renan\\.nuget\\packages\\",
+        "outputPath": "D:\\Trabalho\\HDN\\.net-base-repository\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Infrastructure.Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Renan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\Trabalho\\HDN\\.net-base-repository\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Application\\hdn.net.@base.Application.csproj": {
+                "projectPath": "D:\\Trabalho\\HDN\\.net-base-repository\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Application\\hdn.net.@base.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "MailKit": {
+              "target": "Package",
+              "version": "[2.8.0, )"
+            },
+            "Microsoft.Extensions.Options.ConfigurationExtensions": {
+              "target": "Package",
+              "version": "[3.1.7, )"
+            },
+            "MimeKit": {
+              "target": "Package",
+              "version": "[2.9.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
