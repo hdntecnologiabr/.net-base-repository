@@ -41,7 +41,7 @@ namespace hdn.net._base.WebApi.Middlewares
                         response.StatusCode = (int)HttpStatusCode.BadRequest;
                         foreach (var a in e.Message)
                         {
-                            responseModel.Errors.Add(a);
+                            responseModel.Errors.Add(a.ToString());
                         }
                         break;
                     case KeyNotFoundException e:
