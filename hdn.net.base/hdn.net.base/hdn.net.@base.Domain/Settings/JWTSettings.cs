@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace hdn.net._base.Domain.Settings
+﻿namespace hdn.net._base.Domain.Settings
 {
     public class JWTSettings
     {

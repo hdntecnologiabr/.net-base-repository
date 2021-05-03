@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace hdn.net._base.Application.DTOs.Email
+﻿namespace hdn.net._base.Application.DTOs.Email
 {
     public class EmailRequest
     {

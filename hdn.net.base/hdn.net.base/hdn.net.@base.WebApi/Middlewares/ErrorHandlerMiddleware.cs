@@ -1,9 +1,8 @@
-﻿using hdn.net.@base.Application.Exceptions;
-using hdn.net.@base.Application.Wrappers;
+﻿using hdn.net._base.Application.Wrappers;
 using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
-using System.Linq;
+using System.ComponentModel.DataAnnotations;
 using System.Net;
 using System.Text.Json;
 using System.Threading.Tasks;
@@ -40,7 +39,10 @@ namespace hdn.net._base.WebApi.Middlewares
                     case ValidationException e:
                         // custom application error
                         response.StatusCode = (int)HttpStatusCode.BadRequest;
-                        responseModel.Errors = e.Errors;
+                        foreach (var a in e.Message)
+                        {
+                            responseModel.Errors.Add(a.ToString());
+                        }
                         break;
                     case KeyNotFoundException e:
                         // not found error

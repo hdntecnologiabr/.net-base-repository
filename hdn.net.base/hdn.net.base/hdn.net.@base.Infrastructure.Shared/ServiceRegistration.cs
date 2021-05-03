@@ -1,6 +1,6 @@
-﻿using hdn.net._base.Infrastructure.Shared.Services;
-using hdn.net.@base.Application.Interfaces;
-using hdn.net.@base.Domain.Settings;
+﻿using hdn.net._base.Application.Interfaces;
+using hdn.net._base.Domain.Settings;
+using hdn.net._base.Infrastructure.Shared.Services;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 

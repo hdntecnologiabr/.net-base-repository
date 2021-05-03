@@ -1,10 +1,7 @@
-﻿using hdn.net.@base.Application.DTOs.Account;
-using hdn.net.@base.Application.Interfaces;
+﻿using hdn.net._base.Application.DTOs.Account;
+using hdn.net._base.Application.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace hdn.net._base.WebApi.Controllers

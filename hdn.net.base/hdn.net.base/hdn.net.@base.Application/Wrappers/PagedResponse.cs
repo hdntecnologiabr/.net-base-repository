@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace hdn.net._base.Application.Wrappers
+﻿namespace hdn.net._base.Application.Wrappers
 {
     public class PagedResponse<T> : Response<T>
     {

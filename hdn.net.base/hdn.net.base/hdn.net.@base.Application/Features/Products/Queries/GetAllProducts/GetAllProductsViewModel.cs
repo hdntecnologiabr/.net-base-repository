@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace hdn.net._base.Application.Features.Products.Queries.GetAllProducts
+﻿namespace hdn.net._base.Application.Features.Products.Queries.GetAllProducts
 {
     public class GetAllProductsViewModel
     {

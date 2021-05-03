@@ -1,7 +1,7 @@
-﻿using hdn.net.@base.Application.DTOs.Email;
-using hdn.net.@base.Application.Exceptions;
-using hdn.net.@base.Application.Interfaces;
-using hdn.net.@base.Domain.Settings;
+﻿using hdn.net._base.Application.DTOs.Email;
+using hdn.net._base.Application.Exceptions;
+using hdn.net._base.Application.Interfaces;
+using hdn.net._base.Domain.Settings;
 using MailKit.Net.Smtp;
 using MailKit.Security;
 using Microsoft.Extensions.Logging;

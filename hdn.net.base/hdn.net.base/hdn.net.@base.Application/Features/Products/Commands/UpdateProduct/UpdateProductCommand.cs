@@ -2,9 +2,6 @@
 using hdn.net._base.Application.Interfaces.Repositories;
 using hdn.net._base.Application.Wrappers;
 using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 

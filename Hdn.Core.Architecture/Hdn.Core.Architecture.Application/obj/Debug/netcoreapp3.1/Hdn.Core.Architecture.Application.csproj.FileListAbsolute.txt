@@ -1,0 +1,12 @@
+D:\Elevate\Repositorio\.net_base\Hdn.Core.Architecture\Hdn.Core.Architecture.Application\bin\Debug\netcoreapp3.1\Hdn.Core.Architecture.Application.deps.json
+D:\Elevate\Repositorio\.net_base\Hdn.Core.Architecture\Hdn.Core.Architecture.Application\bin\Debug\netcoreapp3.1\Hdn.Core.Architecture.Application.dll
+D:\Elevate\Repositorio\.net_base\Hdn.Core.Architecture\Hdn.Core.Architecture.Application\bin\Debug\netcoreapp3.1\Hdn.Core.Architecture.Application.pdb
+D:\Elevate\Repositorio\.net_base\Hdn.Core.Architecture\Hdn.Core.Architecture.Application\bin\Debug\netcoreapp3.1\Hdn.Core.Architecture.Domain.dll
+D:\Elevate\Repositorio\.net_base\Hdn.Core.Architecture\Hdn.Core.Architecture.Application\bin\Debug\netcoreapp3.1\Hdn.Core.Architecture.Domain.pdb
+D:\Elevate\Repositorio\.net_base\Hdn.Core.Architecture\Hdn.Core.Architecture.Application\obj\Debug\netcoreapp3.1\Hdn.Core.Architecture.Application.csprojAssemblyReference.cache
+D:\Elevate\Repositorio\.net_base\Hdn.Core.Architecture\Hdn.Core.Architecture.Application\obj\Debug\netcoreapp3.1\Hdn.Core.Architecture.Application.AssemblyInfoInputs.cache
+D:\Elevate\Repositorio\.net_base\Hdn.Core.Architecture\Hdn.Core.Architecture.Application\obj\Debug\netcoreapp3.1\Hdn.Core.Architecture.Application.AssemblyInfo.cs
+D:\Elevate\Repositorio\.net_base\Hdn.Core.Architecture\Hdn.Core.Architecture.Application\obj\Debug\netcoreapp3.1\Hdn.Core.Architecture.Application.csproj.CoreCompileInputs.cache
+D:\Elevate\Repositorio\.net_base\Hdn.Core.Architecture\Hdn.Core.Architecture.Application\obj\Debug\netcoreapp3.1\Hdn.Core.Architecture.Application.csproj.CopyComplete
+D:\Elevate\Repositorio\.net_base\Hdn.Core.Architecture\Hdn.Core.Architecture.Application\obj\Debug\netcoreapp3.1\Hdn.Core.Architecture.Application.dll
+D:\Elevate\Repositorio\.net_base\Hdn.Core.Architecture\Hdn.Core.Architecture.Application\obj\Debug\netcoreapp3.1\Hdn.Core.Architecture.Application.pdb

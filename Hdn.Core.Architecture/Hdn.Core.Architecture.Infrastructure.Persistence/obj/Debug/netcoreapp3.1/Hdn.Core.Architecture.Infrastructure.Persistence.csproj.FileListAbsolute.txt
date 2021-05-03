@@ -1,0 +1,17 @@
+D:\Elevate\Repositorio\.net_base\Hdn.Core.Architecture\Hdn.Core.Architecture.Infrastructure.Persistence\bin\Debug\netcoreapp3.1\Hdn.Core.Architecture.Infrastructure.Persistence.deps.json
+D:\Elevate\Repositorio\.net_base\Hdn.Core.Architecture\Hdn.Core.Architecture.Infrastructure.Persistence\bin\Debug\netcoreapp3.1\Hdn.Core.Architecture.Infrastructure.Persistence.runtimeconfig.json
+D:\Elevate\Repositorio\.net_base\Hdn.Core.Architecture\Hdn.Core.Architecture.Infrastructure.Persistence\bin\Debug\netcoreapp3.1\Hdn.Core.Architecture.Infrastructure.Persistence.runtimeconfig.dev.json
+D:\Elevate\Repositorio\.net_base\Hdn.Core.Architecture\Hdn.Core.Architecture.Infrastructure.Persistence\bin\Debug\netcoreapp3.1\Hdn.Core.Architecture.Infrastructure.Persistence.dll
+D:\Elevate\Repositorio\.net_base\Hdn.Core.Architecture\Hdn.Core.Architecture.Infrastructure.Persistence\bin\Debug\netcoreapp3.1\Hdn.Core.Architecture.Infrastructure.Persistence.pdb
+D:\Elevate\Repositorio\.net_base\Hdn.Core.Architecture\Hdn.Core.Architecture.Infrastructure.Persistence\bin\Debug\netcoreapp3.1\Hdn.Core.Architecture.Application.dll
+D:\Elevate\Repositorio\.net_base\Hdn.Core.Architecture\Hdn.Core.Architecture.Infrastructure.Persistence\bin\Debug\netcoreapp3.1\Hdn.Core.Architecture.Domain.dll
+D:\Elevate\Repositorio\.net_base\Hdn.Core.Architecture\Hdn.Core.Architecture.Infrastructure.Persistence\bin\Debug\netcoreapp3.1\Hdn.Core.Architecture.Application.pdb
+D:\Elevate\Repositorio\.net_base\Hdn.Core.Architecture\Hdn.Core.Architecture.Infrastructure.Persistence\bin\Debug\netcoreapp3.1\Hdn.Core.Architecture.Domain.pdb
+D:\Elevate\Repositorio\.net_base\Hdn.Core.Architecture\Hdn.Core.Architecture.Infrastructure.Persistence\obj\Debug\netcoreapp3.1\Hdn.Core.Architecture.Infrastructure.Persistence.csprojAssemblyReference.cache
+D:\Elevate\Repositorio\.net_base\Hdn.Core.Architecture\Hdn.Core.Architecture.Infrastructure.Persistence\obj\Debug\netcoreapp3.1\Hdn.Core.Architecture.Infrastructure.Persistence.AssemblyInfoInputs.cache
+D:\Elevate\Repositorio\.net_base\Hdn.Core.Architecture\Hdn.Core.Architecture.Infrastructure.Persistence\obj\Debug\netcoreapp3.1\Hdn.Core.Architecture.Infrastructure.Persistence.AssemblyInfo.cs
+D:\Elevate\Repositorio\.net_base\Hdn.Core.Architecture\Hdn.Core.Architecture.Infrastructure.Persistence\obj\Debug\netcoreapp3.1\Hdn.Core.Architecture.Infrastructure.Persistence.csproj.CoreCompileInputs.cache
+D:\Elevate\Repositorio\.net_base\Hdn.Core.Architecture\Hdn.Core.Architecture.Infrastructure.Persistence\obj\Debug\netcoreapp3.1\Hdn.Core.Architecture.Infrastructure.Persistence.csproj.CopyComplete
+D:\Elevate\Repositorio\.net_base\Hdn.Core.Architecture\Hdn.Core.Architecture.Infrastructure.Persistence\obj\Debug\netcoreapp3.1\Hdn.Core.Architecture.Infrastructure.Persistence.dll
+D:\Elevate\Repositorio\.net_base\Hdn.Core.Architecture\Hdn.Core.Architecture.Infrastructure.Persistence\obj\Debug\netcoreapp3.1\Hdn.Core.Architecture.Infrastructure.Persistence.pdb
+D:\Elevate\Repositorio\.net_base\Hdn.Core.Architecture\Hdn.Core.Architecture.Infrastructure.Persistence\obj\Debug\netcoreapp3.1\Hdn.Core.Architecture.Infrastructure.Persistence.genruntimeconfig.cache

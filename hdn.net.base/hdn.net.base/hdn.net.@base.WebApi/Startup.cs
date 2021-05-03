@@ -1,10 +1,10 @@
+using hdn.net._base.Application;
+using hdn.net._base.Application.Interfaces;
+using hdn.net._base.Infrastructure.Identity;
+using hdn.net._base.Infrastructure.Persistence;
+using hdn.net._base.Infrastructure.Shared;
 using hdn.net._base.WebApi.Extensions;
 using hdn.net._base.WebApi.Services;
-using hdn.net.@base.Application;
-using hdn.net.@base.Application.Interfaces;
-using hdn.net.@base.Infrastructure.Identity;
-using hdn.net.@base.Infrastructure.Persistence;
-using hdn.net.@base.Infrastructure.Shared;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;

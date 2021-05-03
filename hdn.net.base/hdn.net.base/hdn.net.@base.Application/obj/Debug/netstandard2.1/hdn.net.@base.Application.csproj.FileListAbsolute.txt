@@ -1,0 +1,12 @@
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Application\bin\Debug\netstandard2.1\hdn.net.@base.Application.deps.json
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Application\bin\Debug\netstandard2.1\hdn.net.@base.Application.dll
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Application\bin\Debug\netstandard2.1\hdn.net.@base.Application.pdb
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Application\bin\Debug\netstandard2.1\hdn.net.@base.Domain.dll
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Application\bin\Debug\netstandard2.1\hdn.net.@base.Domain.pdb
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Application\obj\Debug\netstandard2.1\hdn.net.@base.Application.csprojAssemblyReference.cache
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Application\obj\Debug\netstandard2.1\hdn.net.@base.Application.AssemblyInfoInputs.cache
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Application\obj\Debug\netstandard2.1\hdn.net.@base.Application.AssemblyInfo.cs
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Application\obj\Debug\netstandard2.1\hdn.net.@base.Application.csproj.CoreCompileInputs.cache
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Application\obj\Debug\netstandard2.1\hdn.net.@base.Application.csproj.CopyComplete
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Application\obj\Debug\netstandard2.1\hdn.net.@base.Application.dll
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Application\obj\Debug\netstandard2.1\hdn.net.@base.Application.pdb

@@ -1,0 +1,14 @@
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Infrastructure.Persistence\bin\Debug\netcoreapp3.1\hdn.net.@base.Infrastructure.Persistence.deps.json
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Infrastructure.Persistence\bin\Debug\netcoreapp3.1\hdn.net.@base.Infrastructure.Persistence.dll
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Infrastructure.Persistence\bin\Debug\netcoreapp3.1\hdn.net.@base.Infrastructure.Persistence.pdb
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Infrastructure.Persistence\bin\Debug\netcoreapp3.1\hdn.net.@base.Application.dll
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Infrastructure.Persistence\bin\Debug\netcoreapp3.1\hdn.net.@base.Domain.dll
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Infrastructure.Persistence\bin\Debug\netcoreapp3.1\hdn.net.@base.Application.pdb
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Infrastructure.Persistence\bin\Debug\netcoreapp3.1\hdn.net.@base.Domain.pdb
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Infrastructure.Persistence\obj\Debug\netcoreapp3.1\hdn.net.@base.Infrastructure.Persistence.csprojAssemblyReference.cache
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Infrastructure.Persistence\obj\Debug\netcoreapp3.1\hdn.net.@base.Infrastructure.Persistence.AssemblyInfoInputs.cache
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Infrastructure.Persistence\obj\Debug\netcoreapp3.1\hdn.net.@base.Infrastructure.Persistence.AssemblyInfo.cs
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Infrastructure.Persistence\obj\Debug\netcoreapp3.1\hdn.net.@base.Infrastructure.Persistence.csproj.CoreCompileInputs.cache
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Infrastructure.Persistence\obj\Debug\netcoreapp3.1\hdn.net.@base.Infrastructure.Persistence.csproj.CopyComplete
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Infrastructure.Persistence\obj\Debug\netcoreapp3.1\hdn.net.@base.Infrastructure.Persistence.dll
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Infrastructure.Persistence\obj\Debug\netcoreapp3.1\hdn.net.@base.Infrastructure.Persistence.pdb

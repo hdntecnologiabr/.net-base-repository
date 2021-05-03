@@ -1,9 +1,5 @@
 ﻿using hdn.net._base.WebApi.Middlewares;
 using Microsoft.AspNetCore.Builder;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace hdn.net._base.WebApi.Extensions
 {

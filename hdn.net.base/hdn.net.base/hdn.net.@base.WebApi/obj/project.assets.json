@@ -10647,19 +10647,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Renan\\.nuget\\packages\\": {}
+    "C:\\Users\\samsung\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.1.0",
     "restore": {
-      "projectUniqueName": "D:\\Trabalho\\HDN\\.net-base-repository\\hdn.net.base\\hdn.net.base\\hdn.net.@base.WebApi\\hdn.net.@base.WebApi.csproj",
+      "projectUniqueName": "D:\\Elevate\\Repositorio\\.net_base\\hdn.net.base\\hdn.net.base\\hdn.net.@base.WebApi\\hdn.net.@base.WebApi.csproj",
       "projectName": "hdn.net.@base.WebApi",
-      "projectPath": "D:\\Trabalho\\HDN\\.net-base-repository\\hdn.net.base\\hdn.net.base\\hdn.net.@base.WebApi\\hdn.net.@base.WebApi.csproj",
-      "packagesPath": "C:\\Users\\Renan\\.nuget\\packages\\",
-      "outputPath": "D:\\Trabalho\\HDN\\.net-base-repository\\hdn.net.base\\hdn.net.base\\hdn.net.@base.WebApi\\obj\\",
+      "projectPath": "D:\\Elevate\\Repositorio\\.net_base\\hdn.net.base\\hdn.net.base\\hdn.net.@base.WebApi\\hdn.net.@base.WebApi.csproj",
+      "packagesPath": "C:\\Users\\samsung\\.nuget\\packages\\",
+      "outputPath": "D:\\Elevate\\Repositorio\\.net_base\\hdn.net.base\\hdn.net.base\\hdn.net.@base.WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Renan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\samsung\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10667,23 +10667,24 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://pkgs.dev.azure.com/mongeral/_packaging/Nuget-Mongeral/nuget/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "D:\\Trabalho\\HDN\\.net-base-repository\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Application\\hdn.net.@base.Application.csproj": {
-              "projectPath": "D:\\Trabalho\\HDN\\.net-base-repository\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Application\\hdn.net.@base.Application.csproj"
+            "D:\\Elevate\\Repositorio\\.net_base\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Application\\hdn.net.@base.Application.csproj": {
+              "projectPath": "D:\\Elevate\\Repositorio\\.net_base\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Application\\hdn.net.@base.Application.csproj"
             },
-            "D:\\Trabalho\\HDN\\.net-base-repository\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Infrastructure.Identity\\hdn.net.@base.Infrastructure.Identity.csproj": {
-              "projectPath": "D:\\Trabalho\\HDN\\.net-base-repository\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Infrastructure.Identity\\hdn.net.@base.Infrastructure.Identity.csproj"
+            "D:\\Elevate\\Repositorio\\.net_base\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Infrastructure.Identity\\hdn.net.@base.Infrastructure.Identity.csproj": {
+              "projectPath": "D:\\Elevate\\Repositorio\\.net_base\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Infrastructure.Identity\\hdn.net.@base.Infrastructure.Identity.csproj"
             },
-            "D:\\Trabalho\\HDN\\.net-base-repository\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Infrastructure.Persistence\\hdn.net.@base.Infrastructure.Persistence.csproj": {
-              "projectPath": "D:\\Trabalho\\HDN\\.net-base-repository\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Infrastructure.Persistence\\hdn.net.@base.Infrastructure.Persistence.csproj"
+            "D:\\Elevate\\Repositorio\\.net_base\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Infrastructure.Persistence\\hdn.net.@base.Infrastructure.Persistence.csproj": {
+              "projectPath": "D:\\Elevate\\Repositorio\\.net_base\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Infrastructure.Persistence\\hdn.net.@base.Infrastructure.Persistence.csproj"
             },
-            "D:\\Trabalho\\HDN\\.net-base-repository\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Infrastructure.Shared\\hdn.net.@base.Infrastructure.Shared.csproj": {
-              "projectPath": "D:\\Trabalho\\HDN\\.net-base-repository\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Infrastructure.Shared\\hdn.net.@base.Infrastructure.Shared.csproj"
+            "D:\\Elevate\\Repositorio\\.net_base\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Infrastructure.Shared\\hdn.net.@base.Infrastructure.Shared.csproj": {
+              "projectPath": "D:\\Elevate\\Repositorio\\.net_base\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Infrastructure.Shared\\hdn.net.@base.Infrastructure.Shared.csproj"
             }
           }
         }
@@ -10771,7 +10772,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

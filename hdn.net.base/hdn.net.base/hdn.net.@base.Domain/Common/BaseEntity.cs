@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace hdn.net._base.Domain.Common
+﻿namespace hdn.net._base.Domain.Common
 {
     public abstract class BaseEntity
     {

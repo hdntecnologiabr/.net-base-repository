@@ -1,0 +1,14 @@
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Infrastructure.Shared\bin\Debug\netcoreapp3.1\hdn.net.@base.Infrastructure.Shared.deps.json
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Infrastructure.Shared\bin\Debug\netcoreapp3.1\hdn.net.@base.Infrastructure.Shared.dll
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Infrastructure.Shared\bin\Debug\netcoreapp3.1\hdn.net.@base.Infrastructure.Shared.pdb
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Infrastructure.Shared\bin\Debug\netcoreapp3.1\hdn.net.@base.Application.dll
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Infrastructure.Shared\bin\Debug\netcoreapp3.1\hdn.net.@base.Domain.dll
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Infrastructure.Shared\bin\Debug\netcoreapp3.1\hdn.net.@base.Application.pdb
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Infrastructure.Shared\bin\Debug\netcoreapp3.1\hdn.net.@base.Domain.pdb
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Infrastructure.Shared\obj\Debug\netcoreapp3.1\hdn.net.@base.Infrastructure.Shared.csprojAssemblyReference.cache
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Infrastructure.Shared\obj\Debug\netcoreapp3.1\hdn.net.@base.Infrastructure.Shared.AssemblyInfoInputs.cache
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Infrastructure.Shared\obj\Debug\netcoreapp3.1\hdn.net.@base.Infrastructure.Shared.AssemblyInfo.cs
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Infrastructure.Shared\obj\Debug\netcoreapp3.1\hdn.net.@base.Infrastructure.Shared.csproj.CoreCompileInputs.cache
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Infrastructure.Shared\obj\Debug\netcoreapp3.1\hdn.net.@base.Infrastructure.Shared.csproj.CopyComplete
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Infrastructure.Shared\obj\Debug\netcoreapp3.1\hdn.net.@base.Infrastructure.Shared.dll
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Infrastructure.Shared\obj\Debug\netcoreapp3.1\hdn.net.@base.Infrastructure.Shared.pdb

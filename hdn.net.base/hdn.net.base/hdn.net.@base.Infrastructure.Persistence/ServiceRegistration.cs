@@ -1,14 +1,11 @@
-﻿using hdn.net._base.Infrastructure.Persistence.Contexts;
+﻿using hdn.net._base.Application.Interfaces;
+using hdn.net._base.Application.Interfaces.Repositories;
+using hdn.net._base.Infrastructure.Persistence.Contexts;
 using hdn.net._base.Infrastructure.Persistence.Repositories;
 using hdn.net._base.Infrastructure.Persistence.Repository;
-using hdn.net.@base.Application.Interfaces;
-using hdn.net.@base.Application.Interfaces.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace hdn.net._base.Infrastructure.Persistence
 {

@@ -1,0 +1,17 @@
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Infrastructure.Identity\bin\Debug\netcoreapp3.1\hdn.net.@base.Infrastructure.Identity.deps.json
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Infrastructure.Identity\bin\Debug\netcoreapp3.1\hdn.net.@base.Infrastructure.Identity.runtimeconfig.json
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Infrastructure.Identity\bin\Debug\netcoreapp3.1\hdn.net.@base.Infrastructure.Identity.runtimeconfig.dev.json
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Infrastructure.Identity\bin\Debug\netcoreapp3.1\hdn.net.@base.Infrastructure.Identity.dll
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Infrastructure.Identity\bin\Debug\netcoreapp3.1\hdn.net.@base.Infrastructure.Identity.pdb
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Infrastructure.Identity\bin\Debug\netcoreapp3.1\hdn.net.@base.Application.dll
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Infrastructure.Identity\bin\Debug\netcoreapp3.1\hdn.net.@base.Domain.dll
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Infrastructure.Identity\bin\Debug\netcoreapp3.1\hdn.net.@base.Application.pdb
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Infrastructure.Identity\bin\Debug\netcoreapp3.1\hdn.net.@base.Domain.pdb
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Infrastructure.Identity\obj\Debug\netcoreapp3.1\hdn.net.@base.Infrastructure.Identity.csprojAssemblyReference.cache
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Infrastructure.Identity\obj\Debug\netcoreapp3.1\hdn.net.@base.Infrastructure.Identity.AssemblyInfoInputs.cache
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Infrastructure.Identity\obj\Debug\netcoreapp3.1\hdn.net.@base.Infrastructure.Identity.AssemblyInfo.cs
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Infrastructure.Identity\obj\Debug\netcoreapp3.1\hdn.net.@base.Infrastructure.Identity.csproj.CoreCompileInputs.cache
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Infrastructure.Identity\obj\Debug\netcoreapp3.1\hdn.net.@base.Infrastructure.Identity.csproj.CopyComplete
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Infrastructure.Identity\obj\Debug\netcoreapp3.1\hdn.net.@base.Infrastructure.Identity.dll
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Infrastructure.Identity\obj\Debug\netcoreapp3.1\hdn.net.@base.Infrastructure.Identity.pdb
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Infrastructure.Identity\obj\Debug\netcoreapp3.1\hdn.net.@base.Infrastructure.Identity.genruntimeconfig.cache

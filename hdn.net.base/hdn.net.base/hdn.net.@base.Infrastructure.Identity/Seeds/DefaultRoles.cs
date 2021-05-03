@@ -1,9 +1,6 @@
-﻿using hdn.net._base.Infrastructure.Identity.Models;
-using hdn.net.@base.Application.Enums;
+﻿using hdn.net._base.Application.Enums;
+using hdn.net._base.Infrastructure.Identity.Models;
 using Microsoft.AspNetCore.Identity;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace hdn.net._base.Infrastructure.Identity.Seeds

@@ -1,7 +1,4 @@
-﻿using hdn.net.@base.Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using hdn.net._base.Domain.Entities;
 using System.Threading.Tasks;
 
 namespace hdn.net._base.Application.Interfaces.Repositories

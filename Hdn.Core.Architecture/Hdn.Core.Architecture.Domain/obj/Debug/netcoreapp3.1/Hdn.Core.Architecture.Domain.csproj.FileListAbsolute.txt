@@ -1,0 +1,8 @@
+D:\Elevate\Repositorio\.net_base\Hdn.Core.Architecture\Hdn.Core.Architecture.Domain\bin\Debug\netcoreapp3.1\Hdn.Core.Architecture.Domain.deps.json
+D:\Elevate\Repositorio\.net_base\Hdn.Core.Architecture\Hdn.Core.Architecture.Domain\bin\Debug\netcoreapp3.1\Hdn.Core.Architecture.Domain.dll
+D:\Elevate\Repositorio\.net_base\Hdn.Core.Architecture\Hdn.Core.Architecture.Domain\bin\Debug\netcoreapp3.1\Hdn.Core.Architecture.Domain.pdb
+D:\Elevate\Repositorio\.net_base\Hdn.Core.Architecture\Hdn.Core.Architecture.Domain\obj\Debug\netcoreapp3.1\Hdn.Core.Architecture.Domain.AssemblyInfoInputs.cache
+D:\Elevate\Repositorio\.net_base\Hdn.Core.Architecture\Hdn.Core.Architecture.Domain\obj\Debug\netcoreapp3.1\Hdn.Core.Architecture.Domain.AssemblyInfo.cs
+D:\Elevate\Repositorio\.net_base\Hdn.Core.Architecture\Hdn.Core.Architecture.Domain\obj\Debug\netcoreapp3.1\Hdn.Core.Architecture.Domain.csproj.CoreCompileInputs.cache
+D:\Elevate\Repositorio\.net_base\Hdn.Core.Architecture\Hdn.Core.Architecture.Domain\obj\Debug\netcoreapp3.1\Hdn.Core.Architecture.Domain.dll
+D:\Elevate\Repositorio\.net_base\Hdn.Core.Architecture\Hdn.Core.Architecture.Domain\obj\Debug\netcoreapp3.1\Hdn.Core.Architecture.Domain.pdb

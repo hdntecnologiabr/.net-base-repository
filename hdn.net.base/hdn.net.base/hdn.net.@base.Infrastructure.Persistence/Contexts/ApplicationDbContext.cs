@@ -1,12 +1,8 @@
-﻿using hdn.net.@base.Application.Interfaces;
-using hdn.net.@base.Domain.Common;
-using hdn.net.@base.Domain.Entities;
+﻿using hdn.net._base.Application.Interfaces;
+using hdn.net._base.Domain.Common;
+using hdn.net._base.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Reflection;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 

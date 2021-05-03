@@ -1,13 +1,9 @@
 ﻿using AutoMapper;
 using FluentValidation;
 using hdn.net._base.Application.Behaviours;
-using hdn.net._base.Application.Features.Products.Commands.CreateProduct;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
 using System.Reflection;
-using System.Text;
 
 namespace hdn.net._base.Application
 {

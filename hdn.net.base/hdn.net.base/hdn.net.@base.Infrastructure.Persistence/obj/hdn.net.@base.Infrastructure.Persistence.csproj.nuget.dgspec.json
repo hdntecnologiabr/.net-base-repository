@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Trabalho\\HDN\\.net-base-repository\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Infrastructure.Persistence\\hdn.net.@base.Infrastructure.Persistence.csproj": {}
+    "D:\\Elevate\\Repositorio\\.net_base\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Infrastructure.Persistence\\hdn.net.@base.Infrastructure.Persistence.csproj": {}
   },
   "projects": {
-    "D:\\Trabalho\\HDN\\.net-base-repository\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Application\\hdn.net.@base.Application.csproj": {
+    "D:\\Elevate\\Repositorio\\.net_base\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Application\\hdn.net.@base.Application.csproj": {
       "version": "1.1.0",
       "restore": {
-        "projectUniqueName": "D:\\Trabalho\\HDN\\.net-base-repository\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Application\\hdn.net.@base.Application.csproj",
+        "projectUniqueName": "D:\\Elevate\\Repositorio\\.net_base\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Application\\hdn.net.@base.Application.csproj",
         "projectName": "hdn.net.@base.Application",
-        "projectPath": "D:\\Trabalho\\HDN\\.net-base-repository\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Application\\hdn.net.@base.Application.csproj",
-        "packagesPath": "C:\\Users\\Renan\\.nuget\\packages\\",
-        "outputPath": "D:\\Trabalho\\HDN\\.net-base-repository\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Application\\obj\\",
+        "projectPath": "D:\\Elevate\\Repositorio\\.net_base\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Application\\hdn.net.@base.Application.csproj",
+        "packagesPath": "C:\\Users\\samsung\\.nuget\\packages\\",
+        "outputPath": "D:\\Elevate\\Repositorio\\.net_base\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Renan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\samsung\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,14 +22,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/mongeral/_packaging/Nuget-Mongeral/nuget/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.1": {
             "targetAlias": "netstandard2.1",
             "projectReferences": {
-              "D:\\Trabalho\\HDN\\.net-base-repository\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Domain\\hdn.net.@base.Domain.csproj": {
-                "projectPath": "D:\\Trabalho\\HDN\\.net-base-repository\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Domain\\hdn.net.@base.Domain.csproj"
+              "D:\\Elevate\\Repositorio\\.net_base\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Domain\\hdn.net.@base.Domain.csproj": {
+                "projectPath": "D:\\Elevate\\Repositorio\\.net_base\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Domain\\hdn.net.@base.Domain.csproj"
               }
             }
           }
@@ -96,21 +97,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Trabalho\\HDN\\.net-base-repository\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Domain\\hdn.net.@base.Domain.csproj": {
+    "D:\\Elevate\\Repositorio\\.net_base\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Domain\\hdn.net.@base.Domain.csproj": {
       "version": "1.1.0",
       "restore": {
-        "projectUniqueName": "D:\\Trabalho\\HDN\\.net-base-repository\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Domain\\hdn.net.@base.Domain.csproj",
+        "projectUniqueName": "D:\\Elevate\\Repositorio\\.net_base\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Domain\\hdn.net.@base.Domain.csproj",
         "projectName": "hdn.net.@base.Domain",
-        "projectPath": "D:\\Trabalho\\HDN\\.net-base-repository\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Domain\\hdn.net.@base.Domain.csproj",
-        "packagesPath": "C:\\Users\\Renan\\.nuget\\packages\\",
-        "outputPath": "D:\\Trabalho\\HDN\\.net-base-repository\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Domain\\obj\\",
+        "projectPath": "D:\\Elevate\\Repositorio\\.net_base\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Domain\\hdn.net.@base.Domain.csproj",
+        "packagesPath": "C:\\Users\\samsung\\.nuget\\packages\\",
+        "outputPath": "D:\\Elevate\\Repositorio\\.net_base\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Renan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\samsung\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -118,7 +119,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/mongeral/_packaging/Nuget-Mongeral/nuget/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.1": {
@@ -150,21 +152,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Trabalho\\HDN\\.net-base-repository\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Infrastructure.Persistence\\hdn.net.@base.Infrastructure.Persistence.csproj": {
+    "D:\\Elevate\\Repositorio\\.net_base\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Infrastructure.Persistence\\hdn.net.@base.Infrastructure.Persistence.csproj": {
       "version": "1.1.0",
       "restore": {
-        "projectUniqueName": "D:\\Trabalho\\HDN\\.net-base-repository\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Infrastructure.Persistence\\hdn.net.@base.Infrastructure.Persistence.csproj",
+        "projectUniqueName": "D:\\Elevate\\Repositorio\\.net_base\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Infrastructure.Persistence\\hdn.net.@base.Infrastructure.Persistence.csproj",
         "projectName": "hdn.net.@base.Infrastructure.Persistence",
-        "projectPath": "D:\\Trabalho\\HDN\\.net-base-repository\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Infrastructure.Persistence\\hdn.net.@base.Infrastructure.Persistence.csproj",
-        "packagesPath": "C:\\Users\\Renan\\.nuget\\packages\\",
-        "outputPath": "D:\\Trabalho\\HDN\\.net-base-repository\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Infrastructure.Persistence\\obj\\",
+        "projectPath": "D:\\Elevate\\Repositorio\\.net_base\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Infrastructure.Persistence\\hdn.net.@base.Infrastructure.Persistence.csproj",
+        "packagesPath": "C:\\Users\\samsung\\.nuget\\packages\\",
+        "outputPath": "D:\\Elevate\\Repositorio\\.net_base\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Infrastructure.Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Renan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\samsung\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -172,17 +174,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/mongeral/_packaging/Nuget-Mongeral/nuget/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\Trabalho\\HDN\\.net-base-repository\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Application\\hdn.net.@base.Application.csproj": {
-                "projectPath": "D:\\Trabalho\\HDN\\.net-base-repository\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Application\\hdn.net.@base.Application.csproj"
+              "D:\\Elevate\\Repositorio\\.net_base\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Application\\hdn.net.@base.Application.csproj": {
+                "projectPath": "D:\\Elevate\\Repositorio\\.net_base\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Application\\hdn.net.@base.Application.csproj"
               },
-              "D:\\Trabalho\\HDN\\.net-base-repository\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Domain\\hdn.net.@base.Domain.csproj": {
-                "projectPath": "D:\\Trabalho\\HDN\\.net-base-repository\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Domain\\hdn.net.@base.Domain.csproj"
+              "D:\\Elevate\\Repositorio\\.net_base\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Domain\\hdn.net.@base.Domain.csproj": {
+                "projectPath": "D:\\Elevate\\Repositorio\\.net_base\\hdn.net.base\\hdn.net.base\\hdn.net.@base.Domain\\hdn.net.@base.Domain.csproj"
               }
             }
           }
@@ -229,7 +232,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

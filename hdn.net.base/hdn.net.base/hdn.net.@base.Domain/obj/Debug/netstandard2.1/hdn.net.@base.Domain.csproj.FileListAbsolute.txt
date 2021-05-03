@@ -1,0 +1,8 @@
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Domain\bin\Debug\netstandard2.1\hdn.net.@base.Domain.deps.json
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Domain\bin\Debug\netstandard2.1\hdn.net.@base.Domain.dll
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Domain\bin\Debug\netstandard2.1\hdn.net.@base.Domain.pdb
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Domain\obj\Debug\netstandard2.1\hdn.net.@base.Domain.AssemblyInfoInputs.cache
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Domain\obj\Debug\netstandard2.1\hdn.net.@base.Domain.AssemblyInfo.cs
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Domain\obj\Debug\netstandard2.1\hdn.net.@base.Domain.csproj.CoreCompileInputs.cache
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Domain\obj\Debug\netstandard2.1\hdn.net.@base.Domain.dll
+D:\Elevate\Repositorio\.net_base\hdn.net.base\hdn.net.base\hdn.net.@base.Domain\obj\Debug\netstandard2.1\hdn.net.@base.Domain.pdb

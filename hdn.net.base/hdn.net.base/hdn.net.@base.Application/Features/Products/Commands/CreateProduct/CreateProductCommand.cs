@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using hdn.net._base.Application.Interfaces.Repositories;
 using hdn.net._base.Application.Wrappers;
-using hdn.net.@base.Domain.Entities;
+using hdn.net._base.Domain.Entities;
 using MediatR;
 using System.Threading;
 using System.Threading.Tasks;

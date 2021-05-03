@@ -1,11 +1,9 @@
-﻿using hdn.net._base.Infrastructure.Identity.Contexts;
-using hdn.net._base.Infrastructure.Identity.Helpers;
+﻿using hdn.net._base.Application.Interfaces;
+using hdn.net._base.Application.Wrappers;
+using hdn.net._base.Domain.Settings;
+using hdn.net._base.Infrastructure.Identity.Contexts;
 using hdn.net._base.Infrastructure.Identity.Models;
 using hdn.net._base.Infrastructure.Identity.Services;
-using hdn.net.@base.Application.Exceptions;
-using hdn.net.@base.Application.Interfaces;
-using hdn.net.@base.Application.Wrappers;
-using hdn.net.@base.Domain.Settings;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
@@ -15,9 +13,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using Newtonsoft.Json;
 using System;
-using System.Reflection.Metadata.Ecma335;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace hdn.net._base.Infrastructure.Identity
 {
