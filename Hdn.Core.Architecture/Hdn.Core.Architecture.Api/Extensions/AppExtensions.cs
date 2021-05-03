@@ -1,8 +1,5 @@
-﻿using Microsoft.AspNetCore.Builder;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Hdn.Core.Architecture.Api.Middlewares;
+using Microsoft.AspNetCore.Builder;
 
 namespace Hdn.Core.Architecture.Api.Extensions
 {
@@ -16,9 +13,9 @@ namespace Hdn.Core.Architecture.Api.Extensions
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "CleanArchitecture.hdn.net.architecture.WebApi");
             });
         }
-        //public static void UseErrorHandlingMiddleware(this IApplicationBuilder app)
-        //{
-        //    app.UseMiddleware<ErrorHandlerMiddleware>();
-        //}
+        public static void UseErrorHandlingMiddleware(this IApplicationBuilder app)
+        {
+            app.UseMiddleware<ErrorHandlerMiddleware>();
+        }
     }
 }

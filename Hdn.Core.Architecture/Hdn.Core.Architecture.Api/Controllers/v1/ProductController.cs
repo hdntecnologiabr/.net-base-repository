@@ -1,5 +1,6 @@
 ﻿using Hdn.Core.Architecture.Application.Dtos.Product;
 using Hdn.Core.Architecture.Application.Interfaces.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 
@@ -18,6 +19,7 @@ namespace Hdn.Core.Architecture.Api.Controllers.v1
 
         // POST api/<controller>
         [HttpPost]
+        [Authorize]
         public async Task<IActionResult> Post(ProductRequest product)
         {
             return Ok(await _productService.Create(product));
