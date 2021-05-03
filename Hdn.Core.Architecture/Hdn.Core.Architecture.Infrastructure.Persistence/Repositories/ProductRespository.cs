@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace Hdn.Core.Architecture.Infrastructure.Persistence.Repositories
 {
-    public class ProductRepositoryAsync : GenericRepositoryAsync<Product>, IProductRepository
+    public class ProductRepository: GenericRepository<Product>, IProductRepository
     {
         private readonly DbSet<Product> _products;
 
-        public ProductRepositoryAsync(ApplicationDbContext dbContext) : base(dbContext)
+        public ProductRepository(ApplicationDbContext dbContext) : base(dbContext)
         {
             _products = dbContext.Set<Product>();
         }

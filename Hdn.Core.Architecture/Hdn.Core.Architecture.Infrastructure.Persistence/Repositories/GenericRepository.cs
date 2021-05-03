@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace Hdn.Core.Architecture.Infrastructure.Persistence.Repositories
 {
-    public class GenericRepositoryAsync<T> : IGenericRepository<T> where T : class
+    public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
         private readonly ApplicationDbContext _dbContext;
 
-        public GenericRepositoryAsync(ApplicationDbContext dbContext)
+        public GenericRepository(ApplicationDbContext dbContext)
         {
             _dbContext = dbContext;
         }

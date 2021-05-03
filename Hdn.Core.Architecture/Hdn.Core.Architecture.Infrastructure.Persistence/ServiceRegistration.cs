@@ -20,8 +20,8 @@ namespace Hdn.Core.Architecture.Infrastructure
                b => b.MigrationsAssembly(typeof(ApplicationDbContext).Assembly.FullName)));
 
             #region Repositories
-            services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepositoryAsync<>));
-            services.AddTransient<IProductRepository, ProductRepositoryAsync>();
+            services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+            services.AddTransient<IProductRepository, ProductRepository>();
             #endregion
         }
     }

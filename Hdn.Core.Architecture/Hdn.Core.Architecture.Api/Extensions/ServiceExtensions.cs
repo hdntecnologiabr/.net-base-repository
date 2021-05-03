@@ -15,7 +15,7 @@ namespace Hdn.Core.Architecture.Api.Extensions
         {
             services.AddSwaggerGen(c =>
             {
-                c.IncludeXmlComments(string.Format(@"{0}\hdn.net.architecture.WebApi.xml", System.AppDomain.CurrentDomain.BaseDirectory));
+                // c.IncludeXmlComments(string.Format(@"{0}\hdn.net.architecture.WebApi.xml", System.AppDomain.CurrentDomain.BaseDirectory));
                 c.SwaggerDoc("v1", new OpenApiInfo
                 {
                     Version = "v1",

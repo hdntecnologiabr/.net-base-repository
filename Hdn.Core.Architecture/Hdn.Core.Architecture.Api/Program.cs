@@ -1,3 +1,4 @@
+using Hdn.Core.Architecture.Infrastructure.Identity.Models;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
@@ -37,7 +38,7 @@ namespace Hdn.Core.Architecture
                 }
                 catch (Exception ex)
                 {
-
+                    throw (ex);
                 }
 
             }

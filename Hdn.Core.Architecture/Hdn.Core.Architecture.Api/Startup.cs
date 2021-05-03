@@ -2,7 +2,10 @@ using Hdn.Core.Architecture.Api.Extensions;
 using Hdn.Core.Architecture.Api.Services;
 using Hdn.Core.Architecture.Application;
 using Hdn.Core.Architecture.Application.Interfaces;
+using Hdn.Core.Architecture.Application.Interfaces.Services;
+using Hdn.Core.Architecture.Application.Services;
 using Hdn.Core.Architecture.Infrastructure;
+using Hdn.Core.Architecture.Infrastructure.Identity;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -29,7 +32,7 @@ namespace Hdn.Core.Architecture
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddApplicationLayer();
-            //services.AddIdentityInfrastructure(_config);
+            services.AddIdentityInfrastructure(_config);
             services.AddPersistenceInfrastructure(_config);
             //services.AddSharedInfrastructure(_config);
             services.AddSwaggerExtension();
