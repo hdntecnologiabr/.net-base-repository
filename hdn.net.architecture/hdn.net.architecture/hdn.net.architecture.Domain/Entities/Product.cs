@@ -1,7 +1,4 @@
 ﻿using hdn.net.architecture.Domain.Common;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace hdn.net.architecture.Domain.Entities
 {

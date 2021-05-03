@@ -27,5 +27,8 @@ namespace hdn.net.architecture.Application.DTOs.Account
         [Required]
         [Compare("Password")]
         public string ConfirmPassword { get; set; }
+
+        [Required]        
+        public int TenandId { get; set; }
     }
 }

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace hdn.net.architecture.Application.Filters
+﻿namespace hdn.net.architecture.Application.Filters
 {
     public class RequestParameter
     {

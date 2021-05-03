@@ -6,9 +6,6 @@ using hdn.net.architecture.Infrastructure.Persistence.Repository;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace hdn.net.architecture.Infrastructure.Persistence
 {
@@ -31,6 +28,7 @@ namespace hdn.net.architecture.Infrastructure.Persistence
             #region Repositories
             services.AddTransient(typeof(IGenericRepositoryAsync<>), typeof(GenericRepositoryAsync<>));
             services.AddTransient<IProductRepositoryAsync, ProductRepositoryAsync>();
+            services.AddTransient<ITenantRepositoryAsync, TenantRepositoryAsync>();
             #endregion
         }
     }

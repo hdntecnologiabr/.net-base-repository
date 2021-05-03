@@ -3,9 +3,6 @@ using hdn.net.architecture.Application.Interfaces.Repositories;
 using hdn.net.architecture.Application.Wrappers;
 using hdn.net.architecture.Domain.Entities;
 using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
