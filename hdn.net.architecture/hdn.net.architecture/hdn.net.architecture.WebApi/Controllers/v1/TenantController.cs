@@ -5,6 +5,7 @@ using hdn.net.architecture.Application.Features.Tenants.Queries.GetAllTenants;
 using hdn.net.architecture.Application.Features.Tenants.Queries.GetTenantById;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Threading.Tasks;
 
 namespace hdn.net.architecture.WebApi.Controllers.v1
@@ -22,7 +23,7 @@ namespace hdn.net.architecture.WebApi.Controllers.v1
 
         // GET api/<controller>/5
         [HttpGet("{id}")]
-        public async Task<IActionResult> Get(int id)
+        public async Task<IActionResult> Get(Guid id)
         {
             return Ok(await Mediator.Send(new GetTenantByIdQuery { Id = id }));
         }
@@ -38,7 +39,7 @@ namespace hdn.net.architecture.WebApi.Controllers.v1
         // PUT api/<controller>/5
         [HttpPut("{id}")]
         [Authorize]
-        public async Task<IActionResult> Put(int id, UpdateTenantCommand command)
+        public async Task<IActionResult> Put(Guid id, UpdateTenantCommand command)
         {
             if (id != command.Id)
             {
@@ -50,7 +51,7 @@ namespace hdn.net.architecture.WebApi.Controllers.v1
         // DELETE api/<controller>/5
         [HttpDelete("{id}")]
         [Authorize]
-        public async Task<IActionResult> Delete(int id)
+        public async Task<IActionResult> Delete(Guid id)
         {
             return Ok(await Mediator.Send(new DeleteTenantByIdCommand { Id = id }));
         }

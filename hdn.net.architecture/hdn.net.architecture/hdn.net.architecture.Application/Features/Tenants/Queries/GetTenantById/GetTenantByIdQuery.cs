@@ -3,6 +3,7 @@ using hdn.net.architecture.Application.Interfaces.Repositories;
 using hdn.net.architecture.Application.Wrappers;
 using hdn.net.architecture.Domain.Entities;
 using MediatR;
+using System;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -10,7 +11,7 @@ namespace hdn.net.architecture.Application.Features.Tenants.Queries.GetTenantByI
 {
     public class GetTenantByIdQuery : IRequest<Response<Tenant>>
     {
-        public int Id { get; set; }
+        public Guid Id { get; set; }
         public class GetTenantByIdQueryHandler : IRequestHandler<GetTenantByIdQuery, Response<Tenant>>
         {
             private readonly ITenantRepositoryAsync _tenantRepository;

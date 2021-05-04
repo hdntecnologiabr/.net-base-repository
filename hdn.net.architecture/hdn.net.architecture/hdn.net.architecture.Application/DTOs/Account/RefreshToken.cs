@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace hdn.net.architecture.Application.DTOs.Account
 {
