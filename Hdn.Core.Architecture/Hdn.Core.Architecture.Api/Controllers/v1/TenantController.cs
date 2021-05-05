@@ -1,10 +1,8 @@
 ﻿using Hdn.Core.Architecture.Api.Controllers;
-using Hdn.Core.Architecture.Application.Dtos.Product;
 using Hdn.Core.Architecture.Application.Dtos.Tenant;
 using Hdn.Core.Architecture.Application.Interfaces.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using System;
 using System.Threading.Tasks;
 
 namespace hdn.net.architecture.WebApi.Controllers.v1

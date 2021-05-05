@@ -38,35 +38,59 @@ namespace Hdn.Core.Architecture.Infrastructure.Persistence.Migrations
                     b.Property<Guid>("RowId")
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<int>("TenantId")
+                        .HasColumnType("int");
+
                     b.Property<DateTime?>("Updated")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("UpdatedBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<decimal>("Rate")
-                        .HasColumnType("decimal(18,6)");
-
-                    b.Property<Guid>("TenantId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.HasKey("Id");
+
+                    b.HasIndex("TenantId");
 
                     b.ToTable("Products");
                 });
 
-            modelBuilder.Entity("hdn.net.architecture.Domain.Entities.Tenant", b =>
+            modelBuilder.Entity("Hdn.Core.Architecture.Domain.Entities.Tenant", b =>
                 {
-                    b.Property<Guid>("Id")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("Created")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid>("RowId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime?>("Updated")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UpdatedBy")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
                     b.ToTable("Tenants");
+                });
+
+            modelBuilder.Entity("Hdn.Core.Architecture.Domain.Entities.Product", b =>
+                {
+                    b.HasOne("Hdn.Core.Architecture.Domain.Entities.Tenant", "Tenant")
+                        .WithMany("Products")
+                        .HasForeignKey("TenantId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }
