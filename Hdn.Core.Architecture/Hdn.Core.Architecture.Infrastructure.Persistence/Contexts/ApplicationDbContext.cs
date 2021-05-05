@@ -2,8 +2,7 @@
 using Hdn.Core.Architecture.Domain.Common;
 using Hdn.Core.Architecture.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
-using System.Linq;
-using System.Text;
+using System;
 using System.Threading;
 using System.Threading.Tasks;
 

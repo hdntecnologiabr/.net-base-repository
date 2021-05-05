@@ -16,6 +16,7 @@ namespace Hdn.Core.Architecture.Application
 
             #region Services
             services.AddTransient<IProductService, ProductService>();
+            services.AddTransient<ITenantService, TenantService>();
             #endregion
 
         }

@@ -1,8 +1,7 @@
-﻿using hdn.net.architecture.Application.Features.Tenants.Commands.CreateTenant;
-using hdn.net.architecture.Application.Features.Tenants.Commands.DeleteTenant;
-using hdn.net.architecture.Application.Features.Tenants.Commands.UpdateTenant;
-using hdn.net.architecture.Application.Features.Tenants.Queries.GetAllTenants;
-using hdn.net.architecture.Application.Features.Tenants.Queries.GetTenantById;
+﻿using Hdn.Core.Architecture.Api.Controllers;
+using Hdn.Core.Architecture.Application.Dtos.Product;
+using Hdn.Core.Architecture.Application.Dtos.Tenant;
+using Hdn.Core.Architecture.Application.Interfaces.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -13,47 +12,51 @@ namespace hdn.net.architecture.WebApi.Controllers.v1
     [ApiVersion("1.0")]
     public class TenantController : BaseApiController
     {
+        private readonly ITenantService _tenantService;
+
+        public TenantController(ITenantService tenantService)
+        {
+            _tenantService = tenantService;
+            //intanciar service aqui 
+        }
+
         // GET: api/<controller>
         [HttpGet]
-        public async Task<IActionResult> Get([FromQuery] GetAllTenantsParameter filter)
+        public async Task<IActionResult> Get(int pageNumber, int pageSize)
         {
 
-            return Ok(await Mediator.Send(new GetAllTenantsQuery() { PageSize = filter.PageSize, PageNumber = filter.PageNumber }));
+            return Ok(await _tenantService.Get(pageNumber, pageSize));
         }
 
         // GET api/<controller>/5
         [HttpGet("{id}")]
-        public async Task<IActionResult> Get(Guid id)
+        public async Task<IActionResult> Get(int id)
         {
-            return Ok(await Mediator.Send(new GetTenantByIdQuery { Id = id }));
+            return Ok(await _tenantService.GetById(id));
         }
 
         // POST api/<controller>
         [HttpPost]
         [Authorize]
-        public async Task<IActionResult> Post(CreateTenantCommand command)
+        public async Task<IActionResult> Post([FromBody] TenantRequest tenant)
         {
-            return Ok(await Mediator.Send(command));
+            return Ok(await _tenantService.Create(tenant));
         }
 
-        // PUT api/<controller>/5
-        [HttpPut("{id}")]
+        // PUT api/<controller>/
+        [HttpPut]
         [Authorize]
-        public async Task<IActionResult> Put(Guid id, UpdateTenantCommand command)
-        {
-            if (id != command.Id)
-            {
-                return BadRequest();
-            }
-            return Ok(await Mediator.Send(command));
+        public async Task<IActionResult> Put([FromBody] TenantRequest tenant)
+        {           
+            return Ok(await _tenantService.Update(tenant));
         }
 
         // DELETE api/<controller>/5
         [HttpDelete("{id}")]
         [Authorize]
-        public async Task<IActionResult> Delete(Guid id)
+        public async Task<IActionResult> Delete(int id)
         {
-            return Ok(await Mediator.Send(new DeleteTenantByIdCommand { Id = id }));
+            return Ok(await _tenantService.Delete(id));
         }
     }
 }

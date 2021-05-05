@@ -1,9 +1,12 @@
-﻿using hdn.net.architecture.Domain.Common;
+﻿using Hdn.Core.Architecture.Domain.Common;
+using System.Collections.Generic;
 
-namespace hdn.net.architecture.Domain.Entities
+namespace Hdn.Core.Architecture.Domain.Entities
 {
     public class Tenant : BaseEntity
     {        
         public string Name { get; set; }
+
+        public virtual List<Product> Products { get; set; }
     }
 }
