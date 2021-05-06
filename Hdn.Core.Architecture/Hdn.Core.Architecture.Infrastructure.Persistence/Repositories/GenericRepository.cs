@@ -1,10 +1,8 @@
 ﻿using Hdn.Core.Architecture.Application.Interfaces;
 using Hdn.Core.Architecture.Infrastructure.Persistence.Contexts;
 using Microsoft.EntityFrameworkCore;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Hdn.Core.Architecture.Infrastructure.Persistence.Repositories

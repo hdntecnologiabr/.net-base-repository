@@ -1,8 +1,9 @@
-﻿using Hdn.Core.Architecture.Application.Wrappers;
+﻿using FluentValidation;
+using Hdn.Core.Architecture.Application.Wrappers;
 using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Net;
 using System.Text.Json;
 using System.Threading.Tasks;
@@ -12,10 +13,14 @@ namespace Hdn.Core.Architecture.Api.Middlewares
     public class ErrorHandlerMiddleware
     {
         private readonly RequestDelegate _next;
+        private readonly ILogger _logger;
 
-        public ErrorHandlerMiddleware(RequestDelegate next)
+        public ErrorHandlerMiddleware(
+            RequestDelegate next,
+            ILogger logger)
         {
             _next = next;
+            _logger = logger;
         }
 
         public async Task Invoke(HttpContext context)
@@ -33,25 +38,30 @@ namespace Hdn.Core.Architecture.Api.Middlewares
                 switch (error)
                 {
                     case Application.Exceptions.ApiException e:
-                        // custom application error
                         response.StatusCode = (int)HttpStatusCode.BadRequest;
+                        _logger.LogError(error.ToString());
                         break;
-                    //case ValidationException e:
-                    //    // custom application error
-                    //    response.StatusCode = (int)HttpStatusCode.BadRequest;
-                    //    responseModel.Errors = e.Errors;
-                    //    break;
+
+                    case ValidationException e:
+                        response.StatusCode = (int)HttpStatusCode.BadRequest;
+                        foreach(var erro in e.Errors)
+                        {
+                            responseModel.Errors.Add(erro.ToString());
+                            _logger.LogWarning(string.Join(string.Empty, erro));
+                        }                           
+                        break;
+
                     case KeyNotFoundException e:
-                        // not found error
                         response.StatusCode = (int)HttpStatusCode.NotFound;
+                        _logger.LogError(error.ToString());
                         break;
+
                     default:
-                        // unhandled error
                         response.StatusCode = (int)HttpStatusCode.InternalServerError;
+                        _logger.LogError(error.ToString());
                         break;
                 }
                 var result = JsonSerializer.Serialize(responseModel);
-
                 await response.WriteAsync(result);
             }
         }

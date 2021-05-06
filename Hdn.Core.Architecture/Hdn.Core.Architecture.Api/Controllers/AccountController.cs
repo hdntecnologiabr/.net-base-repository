@@ -1,9 +1,6 @@
 ﻿using Hdn.Core.Architecture.Application.Dtos.Account;
 using Hdn.Core.Architecture.Application.Interfaces.Services;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace Hdn.Core.Architecture.Api.Controllers

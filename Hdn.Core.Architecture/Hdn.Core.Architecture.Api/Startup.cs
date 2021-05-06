@@ -1,23 +1,21 @@
+using FluentValidation;
 using Hdn.Core.Architecture.Api.Extensions;
+using Hdn.Core.Architecture.Api.Middlewares;
 using Hdn.Core.Architecture.Api.Services;
 using Hdn.Core.Architecture.Application;
+using Hdn.Core.Architecture.Application.Dtos.Product;
+using Hdn.Core.Architecture.Application.Dtos.Tenant;
 using Hdn.Core.Architecture.Application.Interfaces;
-using Hdn.Core.Architecture.Application.Interfaces.Services;
-using Hdn.Core.Architecture.Application.Services;
+using Hdn.Core.Architecture.Application.Interfaces.Providers;
+using Hdn.Core.Architecture.Application.Providers;
+using Hdn.Core.Architecture.Application.Validator;
 using Hdn.Core.Architecture.Infrastructure;
 using Hdn.Core.Architecture.Infrastructure.Identity;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Hdn.Core.Architecture
 {
@@ -39,7 +37,25 @@ namespace Hdn.Core.Architecture
             services.AddControllers();
             services.AddApiVersioningExtension();
             services.AddHealthChecks();
+
+            #region Services
+
             services.AddScoped<IAuthenticatedUserService, AuthenticatedUserService>();
+
+            #endregion
+
+            #region Providers
+
+            services.AddSingleton<IMessageProvider, MessageProvider>();
+
+            #endregion
+
+            #region Validators
+
+            services.AddScoped<IValidator<ProductRequest>, ProductRequestValidator>();
+            services.AddScoped<IValidator<TenantRequest>, TenantRequestValidator>();
+
+            #endregion
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -57,8 +73,8 @@ namespace Hdn.Core.Architecture
             app.UseRouting();
             app.UseAuthentication();
             app.UseAuthorization();
-            app.UseSwaggerExtension();
-            //app.UseErrorHandlingMiddleware();
+            app.UseSwaggerExtension();       
+            app.UseMiddleware<ErrorHandlerMiddleware>();
             app.UseHealthChecks("/health");
 
             app.UseEndpoints(endpoints =>

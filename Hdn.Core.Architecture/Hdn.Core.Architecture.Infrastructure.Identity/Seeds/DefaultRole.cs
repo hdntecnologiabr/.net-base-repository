@@ -1,9 +1,6 @@
 ﻿using Hdn.Core.Architecture.Application.Enums;
 using Hdn.Core.Architecture.Infrastructure.Identity.Models;
 using Microsoft.AspNetCore.Identity;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Hdn.Core.Architecture.Infrastructure.Identity.Seeds

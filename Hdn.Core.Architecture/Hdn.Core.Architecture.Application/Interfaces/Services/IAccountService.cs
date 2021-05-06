@@ -1,8 +1,5 @@
 ﻿using Hdn.Core.Architecture.Application.Dtos.Account;
 using Hdn.Core.Architecture.Application.Wrappers;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Hdn.Core.Architecture.Application.Interfaces.Services

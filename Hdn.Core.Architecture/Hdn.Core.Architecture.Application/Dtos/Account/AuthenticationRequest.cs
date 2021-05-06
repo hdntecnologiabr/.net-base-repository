@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Hdn.Core.Architecture.Application.Dtos.Account
+﻿namespace Hdn.Core.Architecture.Application.Dtos.Account
 {
     public class AuthenticationRequest
     {

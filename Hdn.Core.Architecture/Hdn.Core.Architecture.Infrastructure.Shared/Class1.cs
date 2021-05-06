@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Hdn.Core.Architecture.Infrastructure.Shared
+﻿namespace Hdn.Core.Architecture.Infrastructure.Shared
 {
     public class Class1
     {
