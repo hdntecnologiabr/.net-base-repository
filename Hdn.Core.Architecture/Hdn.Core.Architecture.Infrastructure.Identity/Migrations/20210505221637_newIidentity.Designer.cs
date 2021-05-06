@@ -7,11 +7,11 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
-namespace hdn.net.architecture.Infrastructure.Identity.Migrations
+namespace Hdn.Core.Architecture.Infrastructure.Identity.Migrations
 {
     [DbContext(typeof(IdentityContext))]
-    [Migration("20210505203838_update-user")]
-    partial class updateuser
+    [Migration("20210505221637_newIidentity")]
+    partial class newIidentity
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
