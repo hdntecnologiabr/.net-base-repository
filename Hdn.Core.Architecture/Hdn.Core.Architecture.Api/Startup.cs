@@ -59,6 +59,7 @@ namespace Hdn.Core.Architecture
             app.UseAuthorization();
             app.UseSwaggerExtension();
             //app.UseErrorHandlingMiddleware();
+            app.UseResponseHandlerMiddleware();
             app.UseHealthChecks("/health");
 
             app.UseEndpoints(endpoints =>

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Hdn.Core.Architecture.Application.Dtos.Account
 {
-    public class ResetPasswordRequest
+    public class ResetPasswordRequest : RequestBase
     {
 
         [Required]
