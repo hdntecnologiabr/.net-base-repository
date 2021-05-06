@@ -17,5 +17,10 @@ namespace Hdn.Core.Architecture.Api.Extensions
         {
             app.UseMiddleware<ErrorHandlerMiddleware>();
         }
+
+        public static void UseResponseHandlerMiddleware(this IApplicationBuilder app)
+        {
+            app.UseMiddleware<ResponseHandlerMiddleware>();
+        }
     }
 }

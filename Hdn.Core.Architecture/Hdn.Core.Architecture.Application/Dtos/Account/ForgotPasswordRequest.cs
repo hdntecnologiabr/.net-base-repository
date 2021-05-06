@@ -2,7 +2,7 @@
 
 namespace Hdn.Core.Architecture.Application.Dtos.Account
 {
-    public class ForgotPasswordRequest
+    public class ForgotPasswordRequest : RequestBase
     {
         [Required]
         [EmailAddress]

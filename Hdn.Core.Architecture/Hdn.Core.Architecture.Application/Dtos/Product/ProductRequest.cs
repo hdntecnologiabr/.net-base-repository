@@ -1,7 +1,7 @@
 ﻿namespace Hdn.Core.Architecture.Application.Dtos.Product
 {
-    public class ProductRequest
+    public class ProductRequest : RequestBase
     {
-        public string Name { get; set; }
+        public string Name { get; set; }        
     }
 }
