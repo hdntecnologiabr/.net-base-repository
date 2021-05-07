@@ -17,21 +17,21 @@ namespace Hdn.Core.Architecture.Api.Middlewares
 
         public async Task Invoke(HttpContext context)
         {
-            using (var reader = new StreamReader(context.Request.Body))
-            {
-                var body = await reader.ReadToEndAsync();
-                if(body != "")
-                {
-                    var options = new JsonSerializerOptions
-                    {
-                        PropertyNameCaseInsensitive = true
-                    };
-                    
-                    var requestBase = JsonSerializer.Deserialize<RequestBase>(body, options);
-                    context.Response.Headers.Add("tenantId", requestBase?.TenantId.ToString());
-                }
-            }           
+            context.Request.EnableBuffering();
+            var body = await new StreamReader(context.Request.Body).ReadToEndAsync();
 
+            if (body != "")
+            {
+                var options = new JsonSerializerOptions
+                {
+                    PropertyNameCaseInsensitive = true
+                };
+
+                var requestBase = JsonSerializer.Deserialize<RequestBase>(body, options);
+                context.Response.Headers.Add("tenantId", requestBase?.TenantId.ToString());
+            }
+
+            context.Request.Body.Seek(0, SeekOrigin.Begin);            
             await _next(context);
         }
     }
