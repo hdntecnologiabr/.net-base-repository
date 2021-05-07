@@ -16,6 +16,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 
 namespace Hdn.Core.Architecture
 {
@@ -37,6 +38,11 @@ namespace Hdn.Core.Architecture
             services.AddControllers();
             services.AddApiVersioningExtension();
             services.AddHealthChecks();
+
+            #region Logger
+           
+
+            #endregion
 
             #region Services
 

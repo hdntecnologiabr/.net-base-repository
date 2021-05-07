@@ -18,18 +18,15 @@ namespace hdn.net.architecture.WebApi.Controllers.v1
     {
         private readonly ITenantService _tenantService;
         private readonly IValidator<TenantRequest> _validator;
-        private readonly ILogger _logger;
         private readonly IMessageProvider _messageProvider;
 
         public TenantController(
             ITenantService tenantService,
             IValidator<TenantRequest> validator,
-            ILogger logger,
             IMessageProvider messageProvider)
         {
             _tenantService = tenantService;
             _validator = validator;
-            _logger = logger;
             _messageProvider = messageProvider;
         }
 
@@ -47,9 +44,6 @@ namespace hdn.net.architecture.WebApi.Controllers.v1
                 if (pageSize == 0)
                     message.Add(_messageProvider.RequiredParameter(nameof(pageSize)));
 
-                foreach (var m in message)
-                    _logger.LogWarning(m);
-
                 return new BadRequestObjectResult(message);
             }
 
@@ -59,7 +53,6 @@ namespace hdn.net.architecture.WebApi.Controllers.v1
             }
             catch (Exception e)
             {
-                _logger.LogError(e, $"[{ControllerContext.RouteData.Values["controller"]} - {ControllerContext.RouteData.Values["action"]}] - {e.Message}");
                 return new StatusCodeResult(StatusCodes.Status500InternalServerError);
             }
 
@@ -74,7 +67,6 @@ namespace hdn.net.architecture.WebApi.Controllers.v1
             {
                 var message = _messageProvider.RequiredParameter(nameof(id));
 
-                _logger.LogWarning(message);
                 return new BadRequestObjectResult(message);
             }
 
@@ -89,7 +81,6 @@ namespace hdn.net.architecture.WebApi.Controllers.v1
             }
             catch (Exception e)
             {
-                _logger.LogError(e, $"[{ControllerContext.RouteData.Values["controller"]} - {ControllerContext.RouteData.Values["action"]}] - {e.Message}");
                 return new StatusCodeResult(StatusCodes.Status500InternalServerError);
             }
         }
@@ -103,7 +94,6 @@ namespace hdn.net.architecture.WebApi.Controllers.v1
 
             if (!validationResult.IsValid)
             {
-                _logger.LogWarning(string.Join(string.Empty, validationResult.Errors));
                 return new BadRequestObjectResult(validationResult.Errors);
             }
 
@@ -113,7 +103,6 @@ namespace hdn.net.architecture.WebApi.Controllers.v1
             }
             catch (Exception e)
             {
-                _logger.LogError(e, $"[{ControllerContext.RouteData.Values["controller"]} - {ControllerContext.RouteData.Values["action"]}] - {e.Message}");
                 return new StatusCodeResult(StatusCodes.Status500InternalServerError);
             }
         }
@@ -127,7 +116,6 @@ namespace hdn.net.architecture.WebApi.Controllers.v1
 
             if (!validationResult.IsValid)
             {
-                _logger.LogWarning(string.Join(string.Empty, validationResult.Errors));
                 return new BadRequestObjectResult(validationResult.Errors);
             }
 
@@ -137,7 +125,6 @@ namespace hdn.net.architecture.WebApi.Controllers.v1
             }
             catch (Exception e)
             {
-                _logger.LogError(e, $"[{ControllerContext.RouteData.Values["controller"]} - {ControllerContext.RouteData.Values["action"]}] - {e.Message}");
                 return new StatusCodeResult(StatusCodes.Status500InternalServerError); ;
             }
 
@@ -152,7 +139,6 @@ namespace hdn.net.architecture.WebApi.Controllers.v1
             {
                 var message = _messageProvider.RequiredParameter(nameof(id));
 
-                _logger.LogWarning(message);
                 return new BadRequestObjectResult(message);
             }
 
@@ -162,7 +148,6 @@ namespace hdn.net.architecture.WebApi.Controllers.v1
             }
             catch (Exception e)
             {
-                _logger.LogError(e, $"[{ControllerContext.RouteData.Values["controller"]} - {ControllerContext.RouteData.Values["action"]}] - {e.Message}");
                 return new StatusCodeResult(StatusCodes.Status500InternalServerError);
             }
         }

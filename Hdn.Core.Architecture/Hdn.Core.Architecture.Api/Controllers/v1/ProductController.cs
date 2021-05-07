@@ -14,16 +14,13 @@ namespace Hdn.Core.Architecture.Api.Controllers.v1
     {
         private readonly IProductService _productService;
         private readonly IValidator<ProductRequest> _validator;
-        private readonly ILogger _logger;
 
         public ProductController(
             IProductService productService,
-            IValidator<ProductRequest> validator,
-            ILogger logger)
+            IValidator<ProductRequest> validator)
         {
             _productService = productService;
             _validator = validator;
-            _logger = logger;
         }
 
         // POST api/<controller>
