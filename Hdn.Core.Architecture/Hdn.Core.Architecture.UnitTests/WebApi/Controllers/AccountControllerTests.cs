@@ -2,14 +2,9 @@
 using Hdn.Core.Architecture.Api.Controllers;
 using Hdn.Core.Architecture.Application.Dtos.Account;
 using Hdn.Core.Architecture.Application.Interfaces.Services;
-using Hdn.Core.Architecture.Application.Wrappers;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Primitives;
 using Moq;
 using System;
-using System.Net;
-using System.Threading.Tasks;
 using Xunit;
 
 
