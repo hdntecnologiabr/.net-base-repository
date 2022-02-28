@@ -9,7 +9,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Hdn.Core.Architecture.WebApi.Controllers;
 
-[Authorize]
+//TODO: voltar quando fazer teste de autorização
+//[Authorize]
 public class TodoItemsController : ApiControllerBase
 {
     [HttpGet]

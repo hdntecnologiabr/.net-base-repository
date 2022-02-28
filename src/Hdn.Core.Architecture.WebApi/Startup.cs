@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Identity.Web;
-using Microsoft.AspNetCore.Authentication;
 using Hdn.Core.Architecture.Application;
 using Hdn.Core.Architecture.Infrastructure;
 using Hdn.Core.Architecture.Infrastructure.Persistence;
@@ -21,6 +20,7 @@ public class Startup
     public void ConfigureServices(IServiceCollection services)
     {
         // Add services to the container.
+        //TODO: Adicionar depois um teste com identity local
         services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             .AddMicrosoftIdentityWebApi(Configuration.GetSection("AzureAd"));
 
@@ -46,10 +46,12 @@ public class Startup
         services.AddEndpointsApiExplorer();
         services.AddSwaggerGen();
     }
-    public void Configure(WebApplication app, IWebHostEnvironment environment)
+    //TODO: adicionar esse cara junto com o 
+    //public void Configure(WebApplication app, IWebHostEnvironment environment)
+    public void Configure(IApplicationBuilder app, IWebHostEnvironment environment)
     {
         // Configure the HTTP request pipeline.
-        if (app.Environment.IsDevelopment())
+        if (environment.IsDevelopment())
         {
             app.UseSwagger();
             app.UseSwaggerUI();
@@ -73,8 +75,7 @@ public class Startup
             endpoints.MapControllerRoute(
                 name: "default",
                 pattern: "{controller}/{action=Index}/{id?}");
-            endpoints.MapRazorPages();
         });
-        app.MapControllers();
+        //app.MapControllers();
     }
 }

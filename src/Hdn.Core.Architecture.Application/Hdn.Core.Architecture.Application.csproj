@@ -19,4 +19,9 @@
       <ProjectReference Include="..\Hdn.Core.Architecture.Domain\Hdn.Core.Architecture.Domain.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="TodoItem\Handlers\" />
+      <Folder Include="TodoList\Handlers\" />
+    </ItemGroup>
+
 </Project>

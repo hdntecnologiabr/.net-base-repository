@@ -19,12 +19,7 @@ public class Colour : ValueObject
     {
         var colour = new Colour { Code = code };
 
-        if (!SupportedColours.Contains(colour))
-        {
-            throw new UnsupportedColourException(code);
-        }
-
-        return colour;
+        return !SupportedColours.Contains(colour) ? throw new UnsupportedColourException(code) : colour;
     }
 
     public static Colour White => new("#FFFFFF");
@@ -45,20 +40,14 @@ public class Colour : ValueObject
 
     public string Code { get; private set; } = "#000000";
 
-    public static implicit operator string(Colour colour)
-    {
-        return colour.ToString();
-    }
+    public static implicit operator string(Colour colour) =>
+        colour.ToString();
 
-    public static explicit operator Colour(string code)
-    {
-        return From(code);
-    }
+    public static explicit operator Colour(string code) =>
+        From(code);
 
-    public override string ToString()
-    {
-        return Code;
-    }
+    public override string ToString() =>
+         Code;
 
     protected static IEnumerable<Colour> SupportedColours
     {
