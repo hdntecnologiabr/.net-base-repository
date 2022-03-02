@@ -24,4 +24,8 @@
     <ProjectReference Include="..\Hdn.Core.Architecture.Infrastructure\Hdn.Core.Architecture.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Services\" />
+  </ItemGroup>
+
 </Project>

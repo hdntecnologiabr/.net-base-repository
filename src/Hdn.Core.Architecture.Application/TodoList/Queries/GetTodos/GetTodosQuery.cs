@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using AutoMapper.QueryableExtensions;
-using Hdn.Core.Architecture.Application.Common.Interfaces;
 using Hdn.Core.Architecture.Domain.Enums;
+using Hdn.Core.Architecture.Domain.Interfaces.Repository;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
@@ -13,13 +13,13 @@ public class GetTodosQuery : IRequest<TodosVm>
 
 public class GetTodosQueryHandler : IRequestHandler<GetTodosQuery, TodosVm>
 {
-    private readonly IApplicationDbContext _context;
-    private readonly IMapper _mapper;
+    private readonly ITodoListRepository todoListRepository;
+    private readonly IMapper mapper;
 
-    public GetTodosQueryHandler(IApplicationDbContext context, IMapper mapper)
+    public GetTodosQueryHandler(ITodoListRepository todoListRepository, IMapper mapper)
     {
-        _context = context;
-        _mapper = mapper;
+        this.todoListRepository = todoListRepository ?? throw new ArgumentNullException(nameof(todoListRepository));
+        this.mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
     }
 
     public async Task<TodosVm> Handle(GetTodosQuery request, CancellationToken cancellationToken)
@@ -31,11 +31,7 @@ public class GetTodosQueryHandler : IRequestHandler<GetTodosQuery, TodosVm>
                 .Select(p => new PriorityLevelDto { Value = (int)p, Name = p.ToString() })
                 .ToList(),
 
-            Lists = await _context.TodoLists
-                .AsNoTracking()
-                .ProjectTo<TodoListDto>(_mapper.ConfigurationProvider)
-                .OrderBy(t => t.Title)
-                .ToListAsync(cancellationToken)
+            Lists = mapper.Map<IList<TodoListDto>>(await todoListRepository.SelectAllAsync(cancellationToken: cancellationToken))
         };
     }
 }

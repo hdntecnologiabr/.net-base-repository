@@ -2,7 +2,7 @@
 
 public class TodoItemEntity : AuditableEntity
 {
-    public int ListId { get; set; }
+    public Guid ListId { get; set; }
 
     public string? Title { get; set; }
 

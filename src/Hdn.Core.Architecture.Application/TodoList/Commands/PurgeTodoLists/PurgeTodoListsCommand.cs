@@ -1,30 +1,26 @@
-﻿using Hdn.Core.Architecture.Application.Common.Interfaces;
-using Hdn.Core.Architecture.Application.Common.Security;
+﻿using Hdn.Core.Architecture.Domain.Interfaces.Repository;
 using MediatR;
 
 namespace Hdn.Core.Architecture.Application.TodoLists.Commands.PurgeTodoLists;
 
-[Authorize(Roles = "Administrator")]
-[Authorize(Policy = "CanPurge")]
+//[Authorize(Roles = "Administrator")]
+//[Authorize(Policy = "CanPurge")]
 public class PurgeTodoListsCommand : IRequest
 {
 }
 
 public class PurgeTodoListsCommandHandler : IRequestHandler<PurgeTodoListsCommand>
 {
-    private readonly IApplicationDbContext _context;
+    private readonly ITodoListRepository todoListRepository;
 
-    public PurgeTodoListsCommandHandler(IApplicationDbContext context)
+    public PurgeTodoListsCommandHandler(ITodoListRepository todoListRepository)
     {
-        _context = context;
+        this.todoListRepository = todoListRepository ?? throw new ArgumentNullException(nameof(todoListRepository));
     }
 
     public async Task<Unit> Handle(PurgeTodoListsCommand request, CancellationToken cancellationToken)
     {
-        _context.TodoLists.RemoveRange(_context.TodoLists);
-
-        await _context.SaveChangesAsync(cancellationToken);
-
-        return Unit.Value;
+        await todoListRepository.DeleteRangeAsync(await todoListRepository.SelectAllAsync(cancellationToken: cancellationToken));
+        return Unit.Value;//TODO: criar um DeleteAll e um SelectRange
     }
 }

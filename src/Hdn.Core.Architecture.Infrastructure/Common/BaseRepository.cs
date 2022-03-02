@@ -1,4 +1,5 @@
-﻿using Hdn.Core.Architecture.Domain.Common;
+﻿using System.Linq.Expressions;
+using Hdn.Core.Architecture.Domain.Common;
 using Hdn.Core.Architecture.Domain.Interfaces.Repository;
 using Hdn.Core.Architecture.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
@@ -13,52 +14,68 @@ public partial class BaseRepository<T> : IBaseRepository<T> where T : AuditableE
         this.context = context ?? throw new ArgumentNullException(nameof(context));
         dataset = context.Set<T>();
     }
-
-    public async Task<bool> DeleteAsync(Guid id)
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="id">id of the item</param>
+    /// <returns>false for not found item and true if completed the delete</returns>
+    public async Task<bool> DeleteAsync(Expression<Func<T, bool>> predicate, CancellationToken cancellationToken = default)
     {
-        var result = await dataset.SingleOrDefaultAsync(p => p.Id.Equals(id));
+        var result = await dataset.SingleOrDefaultAsync(predicate, cancellationToken);
         if (result == null)
             return false;
 
         dataset.Remove(result);
-        await context.SaveChangesAsync();
+        await context.SaveChangesAsync(cancellationToken);
+        return true;
+    }
+    public async Task<bool> DeleteRangeAsync(IEnumerable<T> itemCollection, CancellationToken cancellationToken = default)
+    {
+        dataset.RemoveRange(itemCollection);
+        await context.SaveChangesAsync(cancellationToken);
         return true;
     }
 
-    public async Task<bool> ExistAsync(Guid id) =>
-        await dataset.AnyAsync(p => p.Id.Equals(id));
+    public async Task<bool> ExistAsync(Expression<Func<T, bool>> predicate, CancellationToken cancellationToken = default) =>
+        await dataset.AnyAsync(predicate, cancellationToken);
 
-    public async Task<T> InsertAsync(T item)
+    public async Task<T> InsertAsync(T item, CancellationToken cancellationToken)
     {
-        await dataset.AddAsync(item);
-        await context.SaveChangesAsync();
+        await dataset.AddAsync(item, cancellationToken);
+        await context.SaveChangesAsync(cancellationToken);
 
         return item;
     }
 
-    public async Task<IEnumerable<T>> InsertRangeAsync(IEnumerable<T> item)
+    public async Task<IEnumerable<T>> InsertRangeAsync(IEnumerable<T> item, CancellationToken cancellationToken = default)
     {
-        await dataset.AddRangeAsync(item);
-        await context.SaveChangesAsync();
+        await dataset.AddRangeAsync(item, cancellationToken);
+        await context.SaveChangesAsync(cancellationToken);
         return item;
     }
 
-    public async Task<T> SelectAsync(Guid id) =>
+    public async Task<T> SelectAsync(Expression<Func<T, bool>> predicate, CancellationToken cancellationToken = default) =>
         await dataset.AsNoTracking()
-                     .SingleOrDefaultAsync(p => p.Id.Equals(id));
+                     .SingleOrDefaultAsync(predicate, cancellationToken);
 
-    public async Task<IEnumerable<T>> SelectAsync() =>
-        await dataset.AsNoTracking()
-                     .ToListAsync();
-
-    public async Task<T> UpdateAsync(T item)
+    public async Task<IEnumerable<T>> SelectAllAsync(Expression<Func<T, bool>> predicate = null, CancellationToken cancellationToken = default) 
     {
-        var result = await dataset.FindAsync(item.Id);
+        return predicate == null
+            ? await dataset.AsNoTracking()
+                           .ToListAsync(cancellationToken)//TODO: ver de retornar IList ou mudar ToList pra outra forma de enemeração
+            : await dataset.AsNoTracking()
+                           .Where(predicate)
+                           .ToListAsync();
+    }
+
+    public async Task<T> UpdateAsync(T item, CancellationToken cancellationToken = default)
+    {
+        var result = await dataset.FindAsync(item.Id, cancellationToken);
         if (result == null)
             return null;//TODO: deveria dar erro? dps olhar uma melhor implementação
 
         context.Update(item);
-        await context.SaveChangesAsync();
+        await context.SaveChangesAsync(cancellationToken);
         return item;
     }
 

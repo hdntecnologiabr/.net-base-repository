@@ -1,6 +1,6 @@
 ﻿using Hdn.Core.Architecture.Application.Common.Exceptions;
-using Hdn.Core.Architecture.Application.Common.Interfaces;
 using Hdn.Core.Architecture.Domain.Entities;
+using Hdn.Core.Architecture.Domain.Interfaces.Repository;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
@@ -8,33 +8,20 @@ namespace Hdn.Core.Architecture.Application.TodoLists.Commands.DeleteTodoList;
 
 public class DeleteTodoListCommand : IRequest
 {
-    public int Id { get; set; }
+    public Guid Id { get; set; }
 }
 
 public class DeleteTodoListCommandHandler : IRequestHandler<DeleteTodoListCommand>
 {
-    private readonly IApplicationDbContext _context;
+    private readonly ITodoListRepository todoListRepository;
 
-    public DeleteTodoListCommandHandler(IApplicationDbContext context)
-    {
-        _context = context;
-    }
+    public DeleteTodoListCommandHandler(ITodoListRepository todoListRepository) =>
+        this.todoListRepository = todoListRepository ?? throw new ArgumentNullException(nameof(todoListRepository));
 
     public async Task<Unit> Handle(DeleteTodoListCommand request, CancellationToken cancellationToken)
     {
-        var entity = await _context.TodoLists
-            .Where(l => l.Id == request.Id)
-            .SingleOrDefaultAsync(cancellationToken);
-
-        if (entity == null)
-        {
-            throw new NotFoundException(nameof(TodoList), request.Id);
-        }
-
-        _context.TodoLists.Remove(entity);
-
-        await _context.SaveChangesAsync(cancellationToken);
-
-        return Unit.Value;
+        return await todoListRepository.DeleteAsync(l => l.Id.Equals(request.Id), cancellationToken)
+            ? Unit.Value
+            : throw new NotFoundException(nameof(TodoListEntity), request.Id);
     }
 }

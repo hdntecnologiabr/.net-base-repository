@@ -1,17 +1,21 @@
-﻿using Hdn.Core.Architecture.Application.Common.Interfaces;
-using FluentValidation;
-using Microsoft.EntityFrameworkCore;
+﻿using FluentValidation;
+using Hdn.Core.Architecture.Domain.Interfaces.Repository;
+using System.Linq;
 
 namespace Hdn.Core.Architecture.Application.TodoLists.Commands.UpdateTodoList;
 
 public class UpdateTodoListCommandValidator : AbstractValidator<UpdateTodoListCommand>
 {
-    private readonly IApplicationDbContext _context;
+    private readonly ITodoListRepository todoListRepository;
 
-    public UpdateTodoListCommandValidator(IApplicationDbContext context)
+    public UpdateTodoListCommandValidator(ITodoListRepository todoListRepository)
     {
-        _context = context;
+        this.todoListRepository = todoListRepository ?? throw new ArgumentNullException(nameof(todoListRepository));
 
+        ApplyRules();
+    }
+    private void ApplyRules()
+    {
         RuleFor(v => v.Title)
             .NotEmpty().WithMessage("Title is required.")
             .MaximumLength(200).WithMessage("Title must not exceed 200 characters.")
@@ -20,8 +24,7 @@ public class UpdateTodoListCommandValidator : AbstractValidator<UpdateTodoListCo
 
     public async Task<bool> BeUniqueTitle(UpdateTodoListCommand model, string title, CancellationToken cancellationToken)
     {
-        return await _context.TodoLists
-            .Where(l => l.Id != model.Id)
-            .AllAsync(l => l.Title != title, cancellationToken);
+        var listCollection = await todoListRepository.SelectAllAsync(l => l.Id != model.Id, cancellationToken);
+        return listCollection.ToList().All(l => l.Title != title);//TODO: melhorar isso aqui usando o Exist
     }
 }

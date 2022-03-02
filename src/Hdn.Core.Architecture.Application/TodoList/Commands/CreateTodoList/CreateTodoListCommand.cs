@@ -1,5 +1,4 @@
-﻿using Hdn.Core.Architecture.Application.Common.Interfaces;
-using Hdn.Core.Architecture.Domain.Entities;
+﻿using Hdn.Core.Architecture.Domain.Entities;
 using Hdn.Core.Architecture.Domain.Interfaces.Repository;
 using MediatR;
 
@@ -24,7 +23,7 @@ public class CreateTodoListCommandHandler : IRequestHandler<CreateTodoListComman
             Title = request.Title
         };
 
-        await todoListRepository.InsertAsync(entity);
+        await todoListRepository.InsertAsync(entity,cancellationToken);
 
         return entity.Id;
     }

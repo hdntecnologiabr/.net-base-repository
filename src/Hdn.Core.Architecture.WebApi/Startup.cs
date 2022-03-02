@@ -6,8 +6,6 @@ using Hdn.Core.Architecture.Infrastructure.Persistence;
 using Hdn.Core.Architecture.WebApi.Filters;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Mvc;
-using Hdn.Core.Architecture.WebApi.Services;
-using Hdn.Core.Architecture.Application.Common.Interfaces;
 
 namespace Hdn.Core.Architecture.WebApi;
 
@@ -27,7 +25,7 @@ public class Startup
         services.AddApplication();
         services.AddInfrastructure(Configuration);
         
-        services.AddSingleton<ICurrentUserService, CurrentUserService>();
+        //services.AddSingleton<ICurrentUserService, CurrentUserService>();//TODO: Add servico do usuario
 
         services.AddDatabaseDeveloperPageExceptionFilter();
         services.AddHttpContextAccessor();

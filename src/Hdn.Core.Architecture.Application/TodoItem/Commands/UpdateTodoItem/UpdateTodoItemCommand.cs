@@ -1,13 +1,13 @@
 ﻿using Hdn.Core.Architecture.Application.Common.Exceptions;
-using Hdn.Core.Architecture.Application.Common.Interfaces;
 using Hdn.Core.Architecture.Domain.Entities;
+using Hdn.Core.Architecture.Domain.Interfaces.Repository;
 using MediatR;
 
 namespace Hdn.Core.Architecture.Application.TodoItems.Commands.UpdateTodoItem;
 
 public class UpdateTodoItemCommand : IRequest
 {
-    public int Id { get; set; }
+    public Guid Id { get; set; }
 
     public string? Title { get; set; }
 
@@ -16,27 +16,21 @@ public class UpdateTodoItemCommand : IRequest
 
 public class UpdateTodoItemCommandHandler : IRequestHandler<UpdateTodoItemCommand>
 {
-    private readonly IApplicationDbContext _context;
+    private readonly ITodoItemRepository todoItemRepository;
 
-    public UpdateTodoItemCommandHandler(IApplicationDbContext context)
-    {
-        _context = context;
-    }
+    public UpdateTodoItemCommandHandler(ITodoItemRepository todoItemRepository) =>
+    this.todoItemRepository = todoItemRepository ?? throw new ArgumentNullException(nameof(todoItemRepository));
 
     public async Task<Unit> Handle(UpdateTodoItemCommand request, CancellationToken cancellationToken)
     {
-        var entity = await _context.TodoItems
-            .FindAsync(new object[] { request.Id }, cancellationToken);
+        var entity = await todoItemRepository.SelectAsync(l => l.Id.Equals(request.Id), cancellationToken);
 
         if (entity == null)
-        {
-            throw new NotFoundException(nameof(TodoItem), request.Id);
-        }
+            throw new NotFoundException(nameof(TodoListEntity), request.Id);
 
         entity.Title = request.Title;
-        entity.Done = request.Done;
 
-        await _context.SaveChangesAsync(cancellationToken);
+        await todoItemRepository.UpdateAsync(entity, cancellationToken);
 
         return Unit.Value;
     }

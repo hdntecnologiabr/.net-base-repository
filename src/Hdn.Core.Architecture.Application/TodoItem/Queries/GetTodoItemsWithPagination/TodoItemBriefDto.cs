@@ -3,7 +3,7 @@ using Hdn.Core.Architecture.Domain.Entities;
 
 namespace Hdn.Core.Architecture.Application.TodoItems.Queries.GetTodoItemsWithPagination;
 
-public class TodoItemBriefDto : IMapFrom<TodoItem>
+public class TodoItemBriefDto : IMapFrom<TodoItemEntity>
 {
     public int Id { get; set; }
 

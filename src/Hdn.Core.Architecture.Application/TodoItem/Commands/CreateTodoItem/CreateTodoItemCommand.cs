@@ -1,41 +1,32 @@
-﻿using Hdn.Core.Architecture.Application.Common.Interfaces;
-using Hdn.Core.Architecture.Domain.Entities;
-using Hdn.Core.Architecture.Domain.Events;
+﻿using Hdn.Core.Architecture.Domain.Entities;
+using Hdn.Core.Architecture.Domain.Interfaces.Repository;
 using MediatR;
 
 namespace Hdn.Core.Architecture.Application.TodoItems.Commands.CreateTodoItem;
 
-public class CreateTodoItemCommand : IRequest<int>
+public class CreateTodoItemCommand : IRequest<Guid>
 {
-    public int ListId { get; set; }
+    public Guid ListId { get; set; }
 
     public string? Title { get; set; }
 }
 
-public class CreateTodoItemCommandHandler : IRequestHandler<CreateTodoItemCommand, int>
+public class CreateTodoItemCommandHandler : IRequestHandler<CreateTodoItemCommand, Guid>
 {
-    private readonly IApplicationDbContext _context;
+    private readonly ITodoItemRepository todoItemRepository;
 
-    public CreateTodoItemCommandHandler(IApplicationDbContext context)
-    {
-        _context = context;
-    }
+    public CreateTodoItemCommandHandler(ITodoItemRepository todoItemRepository) =>
+        this.todoItemRepository = todoItemRepository ?? throw new ArgumentNullException(nameof(todoItemRepository));
 
-    public async Task<int> Handle(CreateTodoItemCommand request, CancellationToken cancellationToken)
+    public async Task<Guid> Handle(CreateTodoItemCommand request, CancellationToken cancellationToken)
     {
-        var entity = new TodoItem
+        var entityToCreate = new TodoItemEntity
         {
             ListId = request.ListId,
             Title = request.Title,
-            Done = false
         };
+        var entityResponse = await todoItemRepository.InsertAsync(entityToCreate);
 
-        entity.DomainEvents.Add(new TodoItemCreatedEvent(entity));
-
-        _context.TodoItems.Add(entity);
-
-        await _context.SaveChangesAsync(cancellationToken);
-
-        return entity.Id;
+        return entityResponse.Id;
     }
 }

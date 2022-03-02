@@ -3,7 +3,7 @@ using Hdn.Core.Architecture.Domain.Entities;
 
 namespace Hdn.Core.Architecture.Application.TodoLists.Queries.GetTodos;
 
-public class TodoListDto : IMapFrom<TodoList>
+public class TodoListDto : IMapFrom<TodoListEntity>
 {
     public TodoListDto()
     {

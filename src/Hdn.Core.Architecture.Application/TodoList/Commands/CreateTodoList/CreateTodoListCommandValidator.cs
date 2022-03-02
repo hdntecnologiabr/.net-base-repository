@@ -1,16 +1,16 @@
-﻿using Hdn.Core.Architecture.Application.Common.Interfaces;
-using FluentValidation;
+﻿using FluentValidation;
+using Hdn.Core.Architecture.Domain.Interfaces.Repository;
 using Microsoft.EntityFrameworkCore;
 
 namespace Hdn.Core.Architecture.Application.TodoLists.Commands.CreateTodoList;
 
 public class CreateTodoListCommandValidator : AbstractValidator<CreateTodoListCommand>
 {
-    private readonly IApplicationDbContext _context;
+    private readonly ITodoListRepository todoListRepository;
 
-    public CreateTodoListCommandValidator(IApplicationDbContext context)
+    public CreateTodoListCommandValidator(ITodoListRepository todoListRepository)
     {
-        _context = context;
+        this.todoListRepository = todoListRepository ??  throw new ArgumentNullException(nameof(todoListRepository));
 
         RuleFor(v => v.Title)
             .NotEmpty().WithMessage("Title is required.")
@@ -18,9 +18,6 @@ public class CreateTodoListCommandValidator : AbstractValidator<CreateTodoListCo
             .MustAsync(BeUniqueTitle).WithMessage("The specified title already exists.");
     }
 
-    public async Task<bool> BeUniqueTitle(string title, CancellationToken cancellationToken)
-    {
-        return await _context.TodoLists
-            .AllAsync(l => l.Title != title, cancellationToken);
-    }
+    public async Task<bool> BeUniqueTitle(string title, CancellationToken cancellationToken) =>
+        !await todoListRepository.ExistAsync(l => l.Title == title, cancellationToken);
 }

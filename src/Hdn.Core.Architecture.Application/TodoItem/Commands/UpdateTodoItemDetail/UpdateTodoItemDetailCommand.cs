@@ -1,16 +1,16 @@
 ﻿using Hdn.Core.Architecture.Application.Common.Exceptions;
-using Hdn.Core.Architecture.Application.Common.Interfaces;
 using Hdn.Core.Architecture.Domain.Entities;
 using Hdn.Core.Architecture.Domain.Enums;
+using Hdn.Core.Architecture.Domain.Interfaces.Repository;
 using MediatR;
 
 namespace Hdn.Core.Architecture.Application.TodoItems.Commands.UpdateTodoItemDetail;
 
 public class UpdateTodoItemDetailCommand : IRequest
 {
-    public int Id { get; set; }
+    public Guid Id { get; set; }
 
-    public int ListId { get; set; }
+    public Guid ListId { get; set; }
 
     public PriorityLevel Priority { get; set; }
 
@@ -19,28 +19,23 @@ public class UpdateTodoItemDetailCommand : IRequest
 
 public class UpdateTodoItemDetailCommandHandler : IRequestHandler<UpdateTodoItemDetailCommand>
 {
-    private readonly IApplicationDbContext _context;
+    private readonly ITodoItemRepository todoItemRepository;
 
-    public UpdateTodoItemDetailCommandHandler(IApplicationDbContext context)
-    {
-        _context = context;
-    }
+    public UpdateTodoItemDetailCommandHandler(ITodoItemRepository todoItemRepository) =>
+        this.todoItemRepository = todoItemRepository ?? throw new ArgumentNullException(nameof(todoItemRepository));
 
     public async Task<Unit> Handle(UpdateTodoItemDetailCommand request, CancellationToken cancellationToken)
     {
-        var entity = await _context.TodoItems
-            .FindAsync(new object[] { request.Id }, cancellationToken);
+        var entity = await todoItemRepository.SelectAsync(l => l.Id.Equals(request.Id), cancellationToken);
 
         if (entity == null)
-        {
-            throw new NotFoundException(nameof(TodoItem), request.Id);
-        }
+            throw new NotFoundException(nameof(TodoListEntity), request.Id);
 
         entity.ListId = request.ListId;
         entity.Priority = request.Priority;
         entity.Note = request.Note;
 
-        await _context.SaveChangesAsync(cancellationToken);
+        await todoItemRepository.UpdateAsync(entity, cancellationToken);
 
         return Unit.Value;
     }

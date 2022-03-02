@@ -1,6 +1,6 @@
 ﻿using System.Reflection;
-using Hdn.Core.Architecture.Application.Common.Behaviours;
 using FluentValidation;
+using Hdn.Core.Architecture.Application.Common.Behaviours;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 
