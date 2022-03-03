@@ -1,11 +1,11 @@
-﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.Identity.Web;
-using Hdn.Core.Architecture.Application;
-using Hdn.Core.Architecture.Infrastructure;
-using Hdn.Core.Architecture.Infrastructure.Persistence;
+﻿using FluentValidation.AspNetCore;
+using Hdn.Core.Architecture.Application.DependencyInjection;
+using Hdn.Core.Architecture.Infrastructure.Context;
+using Hdn.Core.Architecture.Infrastructure.DependencyInjection;
 using Hdn.Core.Architecture.WebApi.Filters;
-using FluentValidation.AspNetCore;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Identity.Web;
 
 namespace Hdn.Core.Architecture.WebApi;
 
@@ -24,7 +24,7 @@ public class Startup
 
         services.AddApplication();
         services.AddInfrastructure(Configuration);
-        
+
         //services.AddSingleton<ICurrentUserService, CurrentUserService>();//TODO: Add servico do usuario
 
         services.AddDatabaseDeveloperPageExceptionFilter();

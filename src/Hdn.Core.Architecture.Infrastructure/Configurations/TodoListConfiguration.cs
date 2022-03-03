@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Hdn.Core.Architecture.Infrastructure.Persistence.Configurations;
+namespace Hdn.Core.Architecture.Infrastructure.Configurations;
 
 public class TodoListConfiguration : IEntityTypeConfiguration<TodoListEntity>
 {

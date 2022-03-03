@@ -3,7 +3,7 @@ using Hdn.Core.Architecture.Domain.Entities;
 using Hdn.Core.Architecture.Domain.Interfaces.Repository;
 using MediatR;
 
-namespace Hdn.Core.Architecture.Application.TodoItems.Commands.DeleteTodoItem;
+namespace Hdn.Core.Architecture.Application.TodoItem.Commands.DeleteTodoItem;
 
 public class DeleteTodoItemCommand : IRequest
 {

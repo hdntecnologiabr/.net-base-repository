@@ -1,11 +1,11 @@
 ﻿using Hdn.Core.Architecture.Domain.Interfaces.Repository;
-using Hdn.Core.Architecture.Infrastructure.Persistence;
+using Hdn.Core.Architecture.Infrastructure.Context;
 using Hdn.Core.Architecture.Infrastructure.Repository;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Hdn.Core.Architecture.Infrastructure;
+namespace Hdn.Core.Architecture.Infrastructure.DependencyInjection;
 
 public static class InfrastructureServiceCollectionExtensions
 {

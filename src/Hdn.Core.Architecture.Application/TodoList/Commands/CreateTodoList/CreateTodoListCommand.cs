@@ -2,7 +2,7 @@
 using Hdn.Core.Architecture.Domain.Interfaces.Repository;
 using MediatR;
 
-namespace Hdn.Core.Architecture.Application.TodoLists.Commands.CreateTodoList;
+namespace Hdn.Core.Architecture.Application.TodoList.Commands.CreateTodoList;
 
 public class CreateTodoListCommand : IRequest<Guid>
 {

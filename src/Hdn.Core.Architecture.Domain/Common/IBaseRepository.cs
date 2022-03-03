@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Linq.Expressions;
 
-namespace Hdn.Core.Architecture.Domain.Interfaces.Repository;
+namespace Hdn.Core.Architecture.Domain.Common;
 
 public interface IBaseRepository<T>: IDisposable where T : AuditableEntity
 {

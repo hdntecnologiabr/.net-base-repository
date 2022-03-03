@@ -2,7 +2,7 @@
 using Hdn.Core.Architecture.Domain.Interfaces.Repository;
 using MediatR;
 
-namespace Hdn.Core.Architecture.Application.TodoItems.Commands.CreateTodoItem;
+namespace Hdn.Core.Architecture.Application.TodoItem.Commands.CreateTodoItem;
 
 public class CreateTodoItemCommand : IRequest<Guid>
 {

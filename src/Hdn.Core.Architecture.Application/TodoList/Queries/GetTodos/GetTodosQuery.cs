@@ -5,7 +5,7 @@ using Hdn.Core.Architecture.Domain.Interfaces.Repository;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
-namespace Hdn.Core.Architecture.Application.TodoLists.Queries.GetTodos;
+namespace Hdn.Core.Architecture.Application.TodoList.Queries.GetTodos;
 
 public class GetTodosQuery : IRequest<TodosVm>
 {
