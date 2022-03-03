@@ -11,25 +11,3 @@ public class UpdateTodoListCommand : IRequest
 
     public string? Title { get; set; }
 }
-
-public class UpdateTodoListCommandHandler : IRequestHandler<UpdateTodoListCommand>
-{
-    private readonly ITodoListRepository todoListRepository;
-
-    public UpdateTodoListCommandHandler(ITodoListRepository todoListRepository) =>
-        this.todoListRepository = todoListRepository ?? throw new ArgumentNullException(nameof(todoListRepository));
-
-    public async Task<Unit> Handle(UpdateTodoListCommand request, CancellationToken cancellationToken)
-    {
-        var entity = await todoListRepository.SelectAsync(l => l.Id.Equals(request.Id), cancellationToken);
-        
-        if (entity == null)
-            throw new NotFoundException(nameof(TodoListEntity), request.Id);
-
-        entity.Title = request.Title;
-
-        await todoListRepository.UpdateAsync(entity,cancellationToken);
-
-        return Unit.Value;
-    }
-}
