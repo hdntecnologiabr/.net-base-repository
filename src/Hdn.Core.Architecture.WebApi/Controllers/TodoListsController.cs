@@ -1,7 +1,7 @@
-﻿using Hdn.Core.Architecture.Application.TodoLists.Commands.CreateTodoList;
-using Hdn.Core.Architecture.Application.TodoLists.Commands.DeleteTodoList;
-using Hdn.Core.Architecture.Application.TodoLists.Commands.UpdateTodoList;
-using Hdn.Core.Architecture.Application.TodoLists.Queries.GetTodos;
+﻿using Hdn.Core.Architecture.Application.TodoList.Commands.CreateTodoList;
+using Hdn.Core.Architecture.Application.TodoList.Commands.DeleteTodoList;
+using Hdn.Core.Architecture.Application.TodoList.Commands.UpdateTodoList;
+using Hdn.Core.Architecture.Application.TodoList.Queries.GetTodos;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Hdn.Core.Architecture.WebApi.Controllers;

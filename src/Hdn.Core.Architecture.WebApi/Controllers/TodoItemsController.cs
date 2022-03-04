@@ -1,10 +1,7 @@
-﻿using Hdn.Core.Architecture.Application.Common.Models;
-using Hdn.Core.Architecture.Application.TodoItems.Commands.CreateTodoItem;
-using Hdn.Core.Architecture.Application.TodoItems.Commands.DeleteTodoItem;
-using Hdn.Core.Architecture.Application.TodoItems.Commands.UpdateTodoItem;
-using Hdn.Core.Architecture.Application.TodoItems.Commands.UpdateTodoItemDetail;
-using Hdn.Core.Architecture.Application.TodoItems.Queries.GetTodoItemsWithPagination;
-using Microsoft.AspNetCore.Authorization;
+﻿using Hdn.Core.Architecture.Application.TodoItem.Commands.CreateTodoItem;
+using Hdn.Core.Architecture.Application.TodoItem.Commands.DeleteTodoItem;
+using Hdn.Core.Architecture.Application.TodoItem.Commands.UpdateTodoItem;
+using Hdn.Core.Architecture.Application.TodoItem.Commands.UpdateTodoItemDetail;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Hdn.Core.Architecture.WebApi.Controllers;

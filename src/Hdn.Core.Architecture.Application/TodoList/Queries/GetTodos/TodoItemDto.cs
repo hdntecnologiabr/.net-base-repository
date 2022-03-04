@@ -2,7 +2,7 @@
 using Hdn.Core.Architecture.Application.Common.Mappings;
 using Hdn.Core.Architecture.Domain.Entities;
 
-namespace Hdn.Core.Architecture.Application.TodoLists.Queries.GetTodos;
+namespace Hdn.Core.Architecture.Application.TodoList.Queries.GetTodos;
 
 public class TodoItemDto : IMapFrom<TodoItemEntity>
 {

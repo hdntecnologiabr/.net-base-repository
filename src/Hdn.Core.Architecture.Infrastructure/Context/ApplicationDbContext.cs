@@ -1,11 +1,8 @@
 ﻿using System.Reflection;
 using Hdn.Core.Architecture.Domain.Common;
-using Hdn.Core.Architecture.Domain.Entities;
-using Duende.IdentityServer.EntityFramework.Options;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Options;
 
-namespace Hdn.Core.Architecture.Infrastructure.Persistence;
+namespace Hdn.Core.Architecture.Infrastructure.Context;
 
 public class ApplicationDbContext : DbContext
 {

@@ -2,7 +2,7 @@
 using Hdn.Core.Architecture.Domain.Interfaces.Repository;
 using Microsoft.EntityFrameworkCore;
 
-namespace Hdn.Core.Architecture.Application.TodoLists.Commands.CreateTodoList;
+namespace Hdn.Core.Architecture.Application.TodoList.Commands.CreateTodoList;
 
 public class CreateTodoListCommandValidator : AbstractValidator<CreateTodoListCommand>
 {

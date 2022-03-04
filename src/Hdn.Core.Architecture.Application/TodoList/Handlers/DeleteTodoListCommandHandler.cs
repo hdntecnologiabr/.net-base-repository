@@ -1,15 +1,10 @@
 ﻿using Hdn.Core.Architecture.Application.Common.Exceptions;
+using Hdn.Core.Architecture.Application.TodoList.Commands.DeleteTodoList;
 using Hdn.Core.Architecture.Domain.Entities;
 using Hdn.Core.Architecture.Domain.Interfaces.Repository;
 using MediatR;
-using Microsoft.EntityFrameworkCore;
 
-namespace Hdn.Core.Architecture.Application.TodoList.Commands.DeleteTodoList;
-
-public class DeleteTodoListCommand : IRequest
-{
-    public Guid Id { get; set; }
-}
+namespace Hdn.Core.Architecture.Application.TodoList.Handlers;
 
 public class DeleteTodoListCommandHandler : IRequestHandler<DeleteTodoListCommand>
 {

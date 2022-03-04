@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 
-namespace Hdn.Core.Architecture.Application.TodoItems.Commands.CreateTodoItem;
+namespace Hdn.Core.Architecture.Application.TodoItem.Commands.CreateTodoItem;
 
 public class CreateTodoItemCommandValidator : AbstractValidator<CreateTodoItemCommand>
 {

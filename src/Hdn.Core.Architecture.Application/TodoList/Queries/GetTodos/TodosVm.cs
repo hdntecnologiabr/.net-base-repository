@@ -1,4 +1,4 @@
-﻿namespace Hdn.Core.Architecture.Application.TodoLists.Queries.GetTodos;
+﻿namespace Hdn.Core.Architecture.Application.TodoList.Queries.GetTodos;
 
 public class TodosVm
 {

@@ -1,10 +1,9 @@
 ﻿using System.Linq.Expressions;
 using Hdn.Core.Architecture.Domain.Common;
-using Hdn.Core.Architecture.Domain.Interfaces.Repository;
-using Hdn.Core.Architecture.Infrastructure.Persistence;
+using Hdn.Core.Architecture.Infrastructure.Context;
 using Microsoft.EntityFrameworkCore;
 
-namespace Origins.Motor.v2.RouterInterfaceFunction.Repository.Repositories;
+namespace Hdn.Core.Architecture.Infrastructure.Common;
 public partial class BaseRepository<T> : IBaseRepository<T> where T : AuditableEntity
 {
     protected readonly ApplicationDbContext context;
@@ -58,7 +57,7 @@ public partial class BaseRepository<T> : IBaseRepository<T> where T : AuditableE
         await dataset.AsNoTracking()
                      .SingleOrDefaultAsync(predicate, cancellationToken);
 
-    public async Task<IEnumerable<T>> SelectAllAsync(Expression<Func<T, bool>> predicate = null, CancellationToken cancellationToken = default) 
+    public async Task<IEnumerable<T>> SelectAllAsync(Expression<Func<T, bool>> predicate = null, CancellationToken cancellationToken = default)
     {
         return predicate == null
             ? await dataset.AsNoTracking()

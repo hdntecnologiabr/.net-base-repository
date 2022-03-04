@@ -1,15 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using System.Linq.Expressions;
+﻿using System.Linq.Expressions;
 
-namespace Hdn.Core.Architecture.Domain.Interfaces.Repository;
+namespace Hdn.Core.Architecture.Domain.Common;
 
-public interface IBaseRepository<T>: IDisposable where T : AuditableEntity
+public interface IBaseRepository<T> : IDisposable where T : AuditableEntity
 {
     Task<T> InsertAsync(T item, CancellationToken cancellationToken = default);
     Task<IEnumerable<T>> InsertRangeAsync(IEnumerable<T> itemCollection, CancellationToken cancellationToken = default);

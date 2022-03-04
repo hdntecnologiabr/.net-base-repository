@@ -1,7 +1,7 @@
 ﻿using Hdn.Core.Architecture.Application.Common.Mappings;
 using Hdn.Core.Architecture.Domain.Entities;
 
-namespace Hdn.Core.Architecture.Application.TodoItems.Queries.GetTodoItemsWithPagination;
+namespace Hdn.Core.Architecture.Application.TodoItem.Queries.GetTodoItemsWithPagination;
 
 public class TodoItemBriefDto : IMapFrom<TodoItemEntity>
 {

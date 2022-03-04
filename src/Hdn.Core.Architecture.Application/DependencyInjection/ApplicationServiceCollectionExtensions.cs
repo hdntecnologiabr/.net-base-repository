@@ -4,7 +4,7 @@ using Hdn.Core.Architecture.Application.Common.Behaviours;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Hdn.Core.Architecture.Application;
+namespace Hdn.Core.Architecture.Application.DependencyInjection;
 
 public static class ApplicationServiceCollectionExtensions
 {

@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 
-namespace Hdn.Core.Architecture.Application.TodoItems.Queries.GetTodoItemsWithPagination;
+namespace Hdn.Core.Architecture.Application.TodoItem.Queries.GetTodoItemsWithPagination;
 
 public class GetTodoItemsWithPaginationQueryValidator : AbstractValidator<GetTodoItemsWithPaginationQuery>
 {

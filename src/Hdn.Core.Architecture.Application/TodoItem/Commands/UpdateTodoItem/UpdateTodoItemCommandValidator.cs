@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 
-namespace Hdn.Core.Architecture.Application.TodoItems.Commands.UpdateTodoItem;
+namespace Hdn.Core.Architecture.Application.TodoItem.Commands.UpdateTodoItem;
 
 public class UpdateTodoItemCommandValidator : AbstractValidator<UpdateTodoItemCommand>
 {

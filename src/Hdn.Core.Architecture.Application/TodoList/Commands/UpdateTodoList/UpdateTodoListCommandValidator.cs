@@ -2,7 +2,7 @@
 using Hdn.Core.Architecture.Domain.Interfaces.Repository;
 using System.Linq;
 
-namespace Hdn.Core.Architecture.Application.TodoLists.Commands.UpdateTodoList;
+namespace Hdn.Core.Architecture.Application.TodoList.Commands.UpdateTodoList;
 
 public class UpdateTodoListCommandValidator : AbstractValidator<UpdateTodoListCommand>
 {
