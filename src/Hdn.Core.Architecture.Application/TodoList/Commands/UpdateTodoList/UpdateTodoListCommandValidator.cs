@@ -1,6 +1,5 @@
 ﻿using FluentValidation;
 using Hdn.Core.Architecture.Domain.Interfaces.Repository;
-using System.Linq;
 
 namespace Hdn.Core.Architecture.Application.TodoList.Commands.UpdateTodoList;
 
