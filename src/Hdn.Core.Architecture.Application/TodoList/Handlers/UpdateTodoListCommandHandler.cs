@@ -18,9 +18,7 @@ public class UpdateTodoListCommandHandler : IRequestHandler<UpdateTodoListComman
         var entity = await todoListRepository.SelectAsync(l => l.Id.Equals(request.Id), cancellationToken);
 
         if (entity == null)
-        {
             throw new NotFoundException(nameof(TodoListEntity), request.Id);
-        }
 
         entity.Title = request.Title;
 

@@ -90,9 +90,7 @@ public partial class BaseRepository<T> : IBaseRepository<T> where T : AuditableE
         if (!disposed)
         {
             if (disposing)
-            {
                 context.Dispose();
-            }
         }
         disposed = true;
     }

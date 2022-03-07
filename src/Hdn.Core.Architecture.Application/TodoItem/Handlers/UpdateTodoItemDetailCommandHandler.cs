@@ -17,9 +17,7 @@ public class UpdateTodoItemDetailCommandHandler : IRequestHandler<UpdateTodoItem
         var entity = await todoItemRepository.SelectAsync(l => l.Id.Equals(request.Id), cancellationToken);
 
         if (entity == null)
-        {
             throw new NotFoundException(nameof(TodoItemEntity), request.Id);
-        }
 
         entity.ListId = request.ListId;
         entity.Priority = request.Priority;
