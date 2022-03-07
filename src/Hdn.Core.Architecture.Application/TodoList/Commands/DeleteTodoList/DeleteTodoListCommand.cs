@@ -2,7 +2,6 @@
 using Hdn.Core.Architecture.Domain.Entities;
 using Hdn.Core.Architecture.Domain.Interfaces.Repository;
 using MediatR;
-using Microsoft.EntityFrameworkCore;
 
 namespace Hdn.Core.Architecture.Application.TodoList.Commands.DeleteTodoList;
 

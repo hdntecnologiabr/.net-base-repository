@@ -1,6 +1,5 @@
 ﻿using FluentValidation;
 using Hdn.Core.Architecture.Domain.Interfaces.Repository;
-using Microsoft.EntityFrameworkCore;
 
 namespace Hdn.Core.Architecture.Application.TodoList.Commands.CreateTodoList;
 
@@ -10,7 +9,7 @@ public class CreateTodoListCommandValidator : AbstractValidator<CreateTodoListCo
 
     public CreateTodoListCommandValidator(ITodoListRepository todoListRepository)
     {
-        this.todoListRepository = todoListRepository ??  throw new ArgumentNullException(nameof(todoListRepository));
+        this.todoListRepository = todoListRepository ?? throw new ArgumentNullException(nameof(todoListRepository));
 
         RuleFor(v => v.Title)
             .NotEmpty().WithMessage("Title is required.")

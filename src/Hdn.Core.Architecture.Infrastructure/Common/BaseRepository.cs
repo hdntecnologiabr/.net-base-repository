@@ -22,7 +22,9 @@ public partial class BaseRepository<T> : IBaseRepository<T> where T : AuditableE
     {
         var result = await dataset.SingleOrDefaultAsync(predicate, cancellationToken);
         if (result == null)
+        {
             return false;
+        }
 
         dataset.Remove(result);
         await context.SaveChangesAsync(cancellationToken);
@@ -71,7 +73,9 @@ public partial class BaseRepository<T> : IBaseRepository<T> where T : AuditableE
     {
         var result = await dataset.FindAsync(item.Id, cancellationToken);
         if (result == null)
+        {
             return null;//TODO: deveria dar erro? dps olhar uma melhor implementação
+        }
 
         context.Update(item);
         await context.SaveChangesAsync(cancellationToken);
@@ -83,12 +87,14 @@ public partial class BaseRepository<T> : IBaseRepository<T> where T : AuditableE
 
     protected virtual void Dispose(bool disposing)
     {
-        if (!this.disposed)
+        if (!disposed)
         {
             if (disposing)
+            {
                 context.Dispose();
+            }
         }
-        this.disposed = true;
+        disposed = true;
     }
 
     public void Dispose()
