@@ -69,10 +69,6 @@ public partial class BaseRepository<T> : IBaseRepository<T> where T : AuditableE
 
     public async Task<T> UpdateAsync(T item, CancellationToken cancellationToken = default)
     {
-        var result = await dataset.FindAsync(item.Id, cancellationToken);
-        if (result == null)
-            return null;//TODO: deveria dar erro? dps olhar uma melhor implementação
-
         context.Update(item);
         await context.SaveChangesAsync(cancellationToken);
         return item;
