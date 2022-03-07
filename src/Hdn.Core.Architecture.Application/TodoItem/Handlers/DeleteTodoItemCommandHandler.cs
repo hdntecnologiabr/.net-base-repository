@@ -17,6 +17,6 @@ public class DeleteTodoItemCommandHandler : IRequestHandler<DeleteTodoItemComman
     {
         return await todoItemRepository.DeleteAsync(l => l.Id.Equals(request.Id), cancellationToken)
             ? Unit.Value
-            : throw new NotFoundException(nameof(TodoListEntity), request.Id);
+            : throw new NotFoundException(nameof(TodoItemEntity), request.Id);
     }
 }

@@ -1,6 +1,4 @@
-﻿using Hdn.Core.Architecture.Domain.Entities;
-using Hdn.Core.Architecture.Domain.Interfaces.Repository;
-using MediatR;
+﻿using MediatR;
 
 namespace Hdn.Core.Architecture.Application.TodoItem.Commands.CreateTodoItem;
 

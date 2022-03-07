@@ -1,7 +1,4 @@
-﻿using Hdn.Core.Architecture.Application.Common.Exceptions;
-using Hdn.Core.Architecture.Domain.Entities;
-using Hdn.Core.Architecture.Domain.Enums;
-using Hdn.Core.Architecture.Domain.Interfaces.Repository;
+﻿using Hdn.Core.Architecture.Domain.Enums;
 using MediatR;
 
 namespace Hdn.Core.Architecture.Application.TodoItem.Commands.UpdateTodoItemDetail;

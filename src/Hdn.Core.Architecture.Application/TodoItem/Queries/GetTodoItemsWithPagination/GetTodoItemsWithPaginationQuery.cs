@@ -1,8 +1,4 @@
-﻿using AutoMapper;
-using AutoMapper.QueryableExtensions;
-using Hdn.Core.Architecture.Application.Common.Mappings;
-using Hdn.Core.Architecture.Application.Common.Models;
-using MediatR;
+﻿using MediatR;
 
 namespace Hdn.Core.Architecture.Application.TodoItem.Queries.GetTodoItemsWithPagination;
 
