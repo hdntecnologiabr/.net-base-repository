@@ -1,4 +1,5 @@
-﻿using FluentValidation.AspNetCore;
+﻿using System.Text.Json.Serialization;
+using FluentValidation.AspNetCore;
 using Hdn.Core.Architecture.Application.DependencyInjection;
 using Hdn.Core.Architecture.Infrastructure.Context;
 using Hdn.Core.Architecture.Infrastructure.DependencyInjection;
@@ -34,6 +35,8 @@ public class Startup
 
         services.AddControllersWithViews(options =>
             options.Filters.Add<ApiExceptionFilterAttribute>())
+                 .AddJsonOptions(options =>
+                options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter()))
                 .AddFluentValidation(x => x.AutomaticValidationEnabled = false);
 
         // Customise default API behaviour
