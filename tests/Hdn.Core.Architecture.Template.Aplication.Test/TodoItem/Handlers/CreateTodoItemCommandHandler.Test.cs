@@ -21,7 +21,7 @@ public class CreateTodoItemCommandHandlerTest
     }
 
     [Fact(DisplayName = "Objeto do tipo TodoItemEntity valido irá Executar metodo TodoItemCreateHandle e deverá retornar um Id valido")]
-    public async Task should_return_success_ToDoItemHandler_create()
+    public async Task Should_Return_Success_ToDoItemHandler_Create()
     {
         //Arrange
         CreateTodoItemCommand request = new CreateTodoItemCommand { ListId = Guid.Parse("2f02ffb6-1769-4ef1-80d5-07fe4b64db15"), Title = "teste" };
@@ -52,7 +52,7 @@ public class CreateTodoItemCommandHandlerTest
     }
 
     [Fact(DisplayName ="Objeto do tipo TodoItemEntity invalido irá executar metodo TodoItemCreateHandle e deverá retornar exception")]
-    public async Task should_fail_ToDoItemHandler_create()
+    public async Task Should_Fail_ToDoItemHandler_Create()
     {
         //Arrange
         CreateTodoItemCommand request = new CreateTodoItemCommand { 
