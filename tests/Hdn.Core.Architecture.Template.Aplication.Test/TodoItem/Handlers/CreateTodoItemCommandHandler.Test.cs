@@ -21,7 +21,7 @@ public class CreateTodoItemCommandHandlerTest
     }
 
     [Fact(DisplayName = "Dado que o objeto CreateTodoItemCommand é valido, quando o metodo create é chamado, então deverá retornar TodoItemEntity.Id valido")]
-    public async Task Should_Return_Success_ToDoItemHandler_Create()
+    public async Task Given_CreateTodoItemCommandValid_When_CallingCreate_Then_ReturnTodoItemEntityGuidValid()
     {
         //Arrange
         var fixture = new Fixture();
@@ -59,7 +59,7 @@ public class CreateTodoItemCommandHandlerTest
     }
 
     [Fact(DisplayName ="Dado que o objeto CreateTodoItemCommand é invalido, quando o metodo create é chamado, então deverá retorar TodoItemEntity.Id invalido")]
-    public async Task Should_Fail_ToDoItemHandler_Create()
+    public async Task Given_CreateTodoItemCommandInvalid_When_CallingCreate_Then_ReturnTodoItemEntityGuidInvalid()
     {
         //Arrange
         var fixture = new Fixture();
