@@ -9,6 +9,7 @@ static IHostBuilder CreateHostBuilder(string[] args) =>
             .ConfigureWebHostDefaults(webBuilder =>
                 webBuilder.UseStartup<Startup>());
 
+
 //TODO - ver de colocar a startup injetada
 //var builder = WebApplication.CreateBuilder(args);
 

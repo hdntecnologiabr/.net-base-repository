@@ -1,4 +1,7 @@
-﻿namespace Hdn.Core.Architecture.Domain.Entities;
+﻿using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
+
+namespace Hdn.Core.Architecture.Domain.Entities;
 
 public class TodoItemEntity : AuditableEntity
 {
